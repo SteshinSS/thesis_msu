@@ -1,0 +1,73 @@
+\documentclass[a4paper, 12pt, left=30mm, right=15mm, top=20mm, bottom=20mm]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{mhchem} % for 13C
+\usepackage{verbatim} % for multiline commentary 
+\usepackage{graphicx} % for logo
+\usepackage{titling} % for shift margins
+\usepackage{blindtext} % for text-generation
+\usepackage{setspace} % to set interval
+
+
+\begin{document}
+
+\begin{titlepage}
+
+	\begin{centering}
+		\includegraphics[width=0.25\textwidth]{logo.png}\par
+	\end{centering}
+	\centerline{Московский государственный университет имени М. В. Ломоносова}
+	\centerline{Факультет вычислительной математики и кибернетики}
+	\centerline{Кафедра математической кибернетики}
+	\centerline{\hfill\hrulefill\hrulefill\hfill}
+	\vfill
+	\vfill
+	\large
+	\centerline{Стешин Семен Сергеевич}
+	\vfill
+	\Large
+	\begin{centering}
+		\textbf{Khnum: быстрая open-source программа \\ для расчета метаболических потоков \\ с использованием \ce{^{13}C}-углерода}
+		
+	\end{centering}
+	\normalsize
+	\vfill
+	\centerline{Выпускная квалификационная работа}
+	\vfill
+	\vfill
+	\begin{flushright}
+	Научный руководитель:\\
+	к.ф.м.н. М.С.Шуплецов
+	\end{flushright}
+	\vfill
+	\vfill
+	\centerline{Москва --- 2020}
+
+\end{titlepage}
+
+
+
+\begin{abstract}
+\blindtext
+\end{abstract}
+
+\tableofcontents
+
+\chapter{Введение}
+\section{Популярное введение}
+\blindtext
+
+\chapter{Основные понятия}
+\section{Глоссарий}
+\section{Прямая задача}
+\section{Обратная задача}
+\chapter{Постановка задачи}
+\chapter{Основная часть}
+\chapter{Полученные результаты}
+
+\begin{thebibliography}{XXXX}
+	\bibitem[SHU1]{Shupletsov1}
+	OpenFLUX2: 13C-MFA modeling software package adjusted for the comprehensive analysis of single and parallel labeling experiments. Shupletsov
+\end{thebibliography}
+
+\end{document}          
