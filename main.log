@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  14 MAR 2020 21:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  14 MAR 2020 23:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -692,18 +692,8 @@ Package pdftex.def Info: logo.png  used on input line 17.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.png>]
-
-Package blindtext Warning: russian not defined, using English instead.
-(blindtext)                 on input line 52.
-
-
-Overfull \hbox (6.53574pt too wide) in paragraph at lines 52--52
-\T2A/cmr/m/n/12 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis 
-fringilla tristique
- []
-
-[1] (./main.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.png>] [1]
+(./main.toc)
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
@@ -711,54 +701,56 @@ fringilla tristique
 
 ]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
-
-Package blindtext Warning: russian not defined, using English instead.
-(blindtext)                 on input line 59.
-
-
-Overfull \hbox (6.53574pt too wide) in paragraph at lines 59--59
-\T2A/cmr/m/n/12 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis 
-fringilla tristique
- []
-
 [2
 
-]
+] [3]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
-[3
-
-]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 [4
 
 ]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 [5
 
 ]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 5.
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
 [6
 
-] [7
+]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 5.
+[7
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+[]\T2A/cmr/m/n/12 ¬семирна€ јс-со-ци-а-ци€ «дра-во-охра-не-ни€. Cancer [Ёлек-
+ []
+
+
+Underfull \hbox (badness 3668) in paragraph at lines 79--80
+\T2A/cmr/m/n/12 трон-ный ре-сурс] URL: https://www.who.int/news-room/fact-
+ []
+
+[8
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 14531 strings out of 492609
- 266765 string characters out of 6131462
- 331360 words of memory out of 5000000
- 18346 multiletter control sequences out of 15000+600000
- 543381 words of font info for 48 fonts, out of 8000000 for 9000
+ 14544 strings out of 492609
+ 266934 string characters out of 6131462
+ 332369 words of memory out of 5000000
+ 18354 multiletter control sequences out of 15000+600000
+ 547605 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,16n,63p,388b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,16n,63p,1061b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</u
 sr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts
 /type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-sup
-er/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></us
-r/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on main.pdf (9 pages, 190336 bytes).
+er/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on main.pdf (10 pages, 250794 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 71 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
