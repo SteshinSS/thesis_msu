@@ -9,6 +9,7 @@
 \usepackage{setspace} % to set interval
 \usepackage[numbers,sort&compress]{natbib} % for range cite [1-4]
 \usepackage{todonotes} % todo
+\usepackage{amsmath} % for matrices
 
 \newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
 \def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}} % define pretty C++
@@ -168,14 +169,78 @@ Wolfgang Wiechert\cite{Wiechert_1997_1, Wiechert_1997_2} в 1997 году. Он�
 
 Будем рассматривать EMU-реакции. Всего можно выделить три типа: реакции конденсации(condensation), расщепления(cleavage) и унимолекулярная реакция(unimolecular). Для каждой реакции мы хотим понять, какое минимальное количество информации требуется, чтобы рассчитать MID продукта. Для всех реакций достаточно знать MID исходных веществ и тогда MID продукта рассчитывается по формулам с \ref{emu_reactions}.
 
-\begin{figure}[t]
-	\centering
-	\includegraphics[width=1\textwidth]{emu_fig_1.png}
-	\caption{EMU-реакции. Источник\cite{EMU_2007}}
-	\label{emu_reactions}
-\end{figure}
+Посмотрим, как получить финальный MID. Через DFS построим все EMU-реакции, чтобы произвести финальный MID. Сгруппируем EMU-реакции по размерам и для каждой группы построим граф.
 
+\clearpage
 \subsubsection{Стехиометрическая матрица}
+
+Введем понятие стехиометрической матрицы. Рассмотрим химическое уравнение:
+
+\begin{center}
+	\ce{Na + H_2O = NaOH + H_2}
+\end{center}
+
+Расставим коэффициенты:
+
+\begin{center}
+	\ce{2Na + 2H_2O = 2NaOH + H_2}
+\end{center}
+
+Перенесем все в левую часть:
+
+\begin{center}
+	\ce{2Na + 2H_2O - 2NaOH - H_2 = 0}
+\end{center}
+Здесь записан закон сохранения массы.
+Из допущения \todo{какого?}, система находится в стационарном состоянии. Значит скорость реакции не меняется:
+\begin{center}
+	$$2\frac{d\ce{Na}}{dt} + 2\frac{d\ce{H_2O}}{dt} - 2\frac{d\ce{NaOH}}{dt} - 2\frac{d\ce{H_2}}{dt} = 0$$
+\end{center}
+
+Запишем в матричном виде:
+
+\begin{center}
+	$$\begin{pmatrix}
+	2 & 2 & -2 & -1
+	\end{pmatrix}
+	\begingroup
+		\renewcommand*{\arraystretch}{1.5}
+		\begin{pmatrix}
+		\frac{d\ce{Na}}{dt}\\
+		\frac{d\ce{H_2O}}{dt}\\
+		\frac{d\ce{NaOH}}{dt}\\
+		\frac{d\ce{H_2}}{dt}
+		\end{pmatrix}
+	\endgroup
+	 = 0$$
+\end{center}
+
+Если мы рассмотрим систему химических уравнений, в левой матрице будет разряженная матрица, каждая строчка которой --- химическое уравнение. Она называется \emph{стехиометрической матрицей}.
+
+\begin{center}
+	$$\begin{pmatrix}
+	\hdotsfor{6}\\
+	\ldots & 2 & 2 & -2 & -1 & \ldots\\
+	\hdotsfor{6}\\
+	\end{pmatrix}
+	\begingroup
+		\renewcommand*{\arraystretch}{1.5}
+		\begin{pmatrix}
+		\vdots\\
+		\frac{d\ce{Na}}{dt}\\
+		\frac{d\ce{H_2O}}{dt}\\
+		\frac{d\ce{NaOH}}{dt}\\
+		\frac{d\ce{H_2}}{dt}\\
+		\vdots\\
+		\end{pmatrix}
+	\endgroup
+	= 0$$
+\end{center}
+
+\begin{center}
+	$$S v = 0$$
+\end{center}
+
 
 \subsubsection{Каскад уравнений}
 
