@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  15 MAR 2020 23:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  15 MAR 2020 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1115,42 +1115,42 @@ Overfull \hbox (16.03224pt too wide) in paragraph at lines 119--119
 [6
 
 ]
-Overfull \hbox (9.50186pt too wide) in paragraph at lines 143--143
+Overfull \hbox (9.50186pt too wide) in paragraph at lines 151--151
 [][]\T2A/cmr/m/n/12 Пулы?  
  []
 
 
-Overfull \hbox (9.50186pt too wide) in paragraph at lines 143--143
+Overfull \hbox (9.50186pt too wide) in paragraph at lines 151--151
 [][]\T2A/cmr/m/n/12 Пулы?  
  []
 
 
-Overfull \hbox (25.16472pt too wide) in paragraph at lines 148--148
+Overfull \hbox (25.16472pt too wide) in paragraph at lines 156--156
 [][]\T2A/cmr/m/n/12 Дописать 
  []
 
 
-Overfull \hbox (11.46393pt too wide) in paragraph at lines 148--148
+Overfull \hbox (11.46393pt too wide) in paragraph at lines 156--156
 \T2A/cmr/m/n/12 нефор- 
  []
 
 
-Overfull \hbox (4.28513pt too wide) in paragraph at lines 148--148
+Overfull \hbox (4.28513pt too wide) in paragraph at lines 156--156
 \T2A/cmr/m/n/12 маль- 
  []
 
 
-Overfull \hbox (25.16472pt too wide) in paragraph at lines 148--148
+Overfull \hbox (25.16472pt too wide) in paragraph at lines 156--156
 [][]\T2A/cmr/m/n/12 Дописать 
  []
 
 
-Overfull \hbox (11.46393pt too wide) in paragraph at lines 148--148
+Overfull \hbox (11.46393pt too wide) in paragraph at lines 156--156
 \T2A/cmr/m/n/12 нефор- 
  []
 
 
-Overfull \hbox (4.28513pt too wide) in paragraph at lines 148--148
+Overfull \hbox (4.28513pt too wide) in paragraph at lines 156--156
 \T2A/cmr/m/n/12 маль- 
  []
 
@@ -1158,84 +1158,88 @@ Overfull \hbox (4.28513pt too wide) in paragraph at lines 148--148
 
 ]
 
-LaTeX Warning: Reference `emu_reactions' on page 8 undefined on input line 170.
+LaTeX Warning: Reference `emu_reactions' on page 8 undefined on input line 178.
 
 
 [8
 
 ]
-Overfull \hbox (15.05331pt too wide) in paragraph at lines 195--195
+Overfull \hbox (15.05331pt too wide) in paragraph at lines 203--203
 [][]\T2A/cmr/m/n/12 какого?  
  []
 
 
-Overfull \hbox (15.05331pt too wide) in paragraph at lines 195--195
+Overfull \hbox (15.05331pt too wide) in paragraph at lines 203--203
 [][]\T2A/cmr/m/n/12 какого?  
  []
 
 [9
 
-] [10]
+] [10] [11
+
+] [12
+
+]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
-[11
-
-]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
-[12
-
-]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 5.
 [13
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
+[14
+
+]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 5.
+[15
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 []\T2A/cmr/m/n/12 Всемирная Ас-со-ци-а-ция Здра-во-охра-не-ния. Cancer [Элек-
  []
 
 
-Underfull \hbox (badness 3668) in paragraph at lines 283--284
+Underfull \hbox (badness 3668) in paragraph at lines 293--294
 \T2A/cmr/m/n/12 трон-ный ре-сурс] URL: https://www.who.int/news-room/fact-
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 298--299
+Underfull \hbox (badness 2635) in paragraph at lines 308--309
 []\T2A/cmr/m/n/12 Walther J. L. et al. Optimization of 13C isotopic tracers
  []
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 298--299
+Underfull \hbox (badness 2027) in paragraph at lines 308--309
 \T2A/cmr/m/n/12 for metabolic flux analysis in mammalian cells //Metabolic
  []
 
-[14
+[16
 
 ]
-Underfull \hbox (badness 1721) in paragraph at lines 325--326
+Underfull \hbox (badness 1721) in paragraph at lines 335--336
 []\T2A/cmr/m/n/12 Wahrheit J., Nicolae A., Heinzle E. Eukaryotic metabolism:
  []
 
-[15]
-Underfull \hbox (badness 1117) in paragraph at lines 352--353
+[17]
+Underfull \hbox (badness 1117) in paragraph at lines 362--363
 []\T2A/cmr/m/n/12 Wiechert W. et al. Bidirectional reaction steps in metabolic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--353
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
 \T2A/cmr/m/n/12 networks: II. Flux estimation and statistical analysis
  []
 
 
-Underfull \hbox (badness 1117) in paragraph at lines 355--356
+Underfull \hbox (badness 1117) in paragraph at lines 365--366
 []\T2A/cmr/m/n/12 Wiechert W. et al. Bidirectional reaction steps in metabolic
  []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 358--359
+Underfull \hbox (badness 1867) in paragraph at lines 368--369
 []\T2A/cmr/m/n/12 M^^Dollney M. et al. Bidirectional reaction steps in metaboli
 c
  []
 
-[16] [17] (./main.aux)
+[18] [19] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1265,10 +1269,10 @@ frm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/sh
 are/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
 ti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (19 pages, 428243 bytes).
+Output written on main.pdf (21 pages, 431036 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
+ 182 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
