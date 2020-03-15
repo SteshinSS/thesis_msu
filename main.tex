@@ -10,6 +10,10 @@
 \usepackage[numbers,sort&compress]{natbib} % for range cite [1-4]
 \usepackage{todonotes} % todo
 
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}} % define pretty C++
+
+\graphicspath{ {./pics/} }
 \begin{document}
 
 \begin{titlepage}
@@ -66,13 +70,22 @@
 В случае с эффектом Варбурга, открытие заключалось в изменении скорости химической реакции, протекающей внутри клетки. В случае с инсулином, решается задача метаболической инженерии --- увеличить скорость синтеза инсулина, не убив кишечную палочку. В обоих случаях надо уметь измерять скорости внутриклеточных химических реакций -- их называют потоками. Один из современных методов измерения потоков -- \emph{\ce{^{13}C}-Metabolic Flux Analysis} (далее \emph{MFA}), что переводится как анализ метаболических потоков. Его применяют в исследованиях рака\cite{Application_cancer_2009, Application_cancer_2012, Application_cancer_2013, Application_cancer_2015, Application_cancer_2017, Application_cancer_2018, Application_cancer_2018_2}, в~метаболической инженерии\cite{Application_engeneering_2009, Application_engeneering_2015, Application_engeneering_2017} и в других областях\cite{Application_other_2011, Application_other_2013, Application_other_2014}. Этому методу посвящена наша работа.
 
 \section{\ce{^{13}C}-Metabolic Flux Analysis}
-Введем основные понятия. Химические реакции, протекающие внутри клетки называют \emph{метаболическими потоками}, а их реагенты --- \emph{метаболитами}. Задача состоит в определении скоростей внутриклеточных потоков. Для этого в методе \ce{^{13}C}-MFA используется глюкоза, у которой некоторые атомы углерода заменены на тяжелый изотоп \ce{^{13}C}. Эта глюкоза скармливается колонии клеток, и тяжелый углерод распространяется по метаболитам в ходе разных химических реакций. То как распределится углерод, зависит от скоростей потоков. Мы будем отслеживать углерод (поэтому его называют \emph{трейсером}) и по его распределению восстановим скорости потоков.
+Введем основные понятия. Химические реакции, протекающие внутри клетки называют \emph{метаболическими потоками}, а их реагенты --- \emph{метаболитами}. Задача состоит в определении скоростей внутриклеточных потоков. 
+
+Напрямую можно измерить только внешние потоки --- например, с какой скоростью поглощается глюкоза или с какой скоростью выделяется \ce{CO_2}. Внутриклеточные потоки восстанавливают из <<сцепленной>> информации, полученной в эксперименте. Для этого в методе \ce{^{13}C}-MFA используется субстрат, у которого некоторые атомы углерода заменены на стабильный тяжелый изотоп \ce{^{13}C}.\todo{проверить доступность субстратов углерода}
+\footnote{На самом деле, использовать углерод не обязательно. В последнее время появились работы, использующие \ce{^{15}N} азот \cite{nitrogen_mfa} или \ce{^{34}S} серу \cite{sulfur_mfa}. Эти стабильные изотопы позволяют исследовать метаболические пути, в которых нет углерода, однако, для большинства приложений хватает более доступных субстратов с меченным углеродом.} 
+Этот субстрат скармливается колонии клеток, и тяжелый углерод распространяется по метаболитам в ходе химических реакций. То, как распределится изотоп, зависит от скоростей потоков. Мы будем отслеживать углерод (поэтому его называют \emph{трейсером}) и по его распределению математически восстановим скорости потоков.
 
 \subsection{Эксперимент}
-Хотя, текущая работа концентрируется на численном моделировании, опишем эксперимента\cite[стр. 312]{protocol}. Исследователь выращивает клетки на субстрате, содержащем \ce{^{13}C}-углерод (обычно это глюкоза). Когда трейсер распределится по биологической системе, изолируем некоторые метаболиты: например, аминокислоты, полученные гидролизацией белков. 
+Хотя, текущая работа концентрируется на численном моделировании, опишем эксперимент\cite[стр. 312]{protocol}. Исследователь выращивает клетки на субстрате, содержащем \ce{^{13}C}-углерод (обычно это глюкоза). Когда трейсер распределится по биологической системе, изолируем некоторые метаболиты: например, аминокислоты, полученные гидролизацией белков. Эти метаболиты содержат разное количество меченных атомов и, поэтому отличаются по массе. Найдем долю молекул разной тяжести. <<Взвешивать>> молекулы можно с помощью газовой хроматографии, при этом для каждого метаболита на выходе получим так называемый \emph{Mass Isotopomer Distribution} (далее \emph{MID}) --- вектор $MID = [M_0, M_1, \ldots, M_n]$, где $M_i$ --- массовая доля метаболитов с $i$ атомами трейсера и $\sum_{i = 0}^{n} = 1$. Подробные протоколы эксперимента можно найти в \cite{protocol_animal} для животных клеток и в \cite{protocol_plant} для растений.
 
-\subsection{Компьютерное моделирование}
-Вычисляем то-то и вот так-то. Есть вот такие модели. Есть вот такие программы.
+\subsection{Математическая модель}
+Существуют разные подходы к вычислению метаболических потоков. Чаще всего задачу решают как обратную. Для этого создают математическую модель, описывающую распределение трейсера в биологической системе, при заданных скоростях потока; пишут программу для симуляции, а затем решают задачу регрессии: подбирают такие значения потоков, при которых распределение трейсера в симуляции совпадает с распределением, полученным в эксперименте.
+
+Первым формальную модель прямой симуляции составил 	
+Wolfgang Wiechert\cite{Wiechert_1997_1, Wiechert_1997_2} в 1997 году. Она использовала понятие изотопомера --- это молекулы, имеющие одинаковое количество атомов изотопов. За два года автор разработал математически эквивалентную модель кумомеров\cite{Wiechert_1999_3, Wiechert_1999_4}, которая быстрей расчитывалась на компьютере. В 2007 году Maciek R. Antoniewicz создал EMU-модель\cite{EMU_2007}, которая остается самой популярной среди программных реализаций. Так же существуют детерминированные модели\cite{Direct_MFA}, вероятностные модели на основе Марковских цепей\cite{Markov_chain_MFA} и другие\cite{Fluxomer_MFA}. В этой работе подробно разбирается EMU-модель.
+
+\subsection{Компьютерные программы}
 
 \chapter{Основные понятия}
 \section{Глоссарий}
@@ -96,18 +109,34 @@
 	\item Метаболическая карта должна быть полной. То есть для интересующих метаболических потоков должны быть известны все предшествующие химические реакции, и в них должна быть известна судьба каждого атома углерода.
 	\todo{Дописать после неформального введения}
 	
-	\item Изотопические массовые эффекты несущественны. То есть химические реакции протекают одинаково как с \ce{^{12}C}, так и с \ce{^{13}C}. Это обычно так, но массовые эффекты можно наблюдать в случае малых молекул типа \ce{CO_2}.
+	\item Изотопические массовые эффекты несущественны. То есть химические реакции протекают одинаково как с \ce{^{12}C}, так и с \ce{^{13}C}. Это обычно верно, но массовые эффекты можно наблюдать в случае малых молекул типа \ce{CO_2}.
 \end{enumerate}
+
+Заметим, что разным математическим моделям могут соответствовать разные допущения. Этот вопрос подробно разбирался в работе \cite{formalizm_2017}, там же формально был доказан изоморфизм нескольких популярных моделей.
 \clearpage
 
 \section{Прямая симуляция}
 Опишем модель распространения трейсера EMU, предложенную Мачеком Антониевичем в 2007 году\cite{EMU_2007}.
 
+Пусть $A$ --- молекула. Любое непустое подмножество атомов углерода молекулы $A$ будем называть \emph{Elementary Metabolic Unit} (далее \emph{EMU}). Например, если $A$ состоит из трех атомов углерода, обозначим через $A_{13}$ EMU состоящий из первого и третьего атома углерода (на атомах углерода одной молекулы существует естественный порядок).
+
+Будем рассматривать EMU-реакции. Всего можно выделить три типа: реакции конденсации(condensation), расщепления(cleavage) и унимолекулярная реакция(unimolecular). Для каждой реакции мы хотим понять, какое минимальное количество информации требуется, чтобы рассчитать MID продукта. Для всех реакций достаточно знать MID исходных веществ и тогда MID продукта рассчитывается по формалам с \ref{emu_reactions}.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=1\textwidth]{emu_fig_1.png}
+	\caption{EMU-реакции. Источник\cite{EMU_2007}}
+	\label{emu_reactions}
+\end{figure}
+
 \section{Обратная задача}
 Метод оптимизации.
 
 \chapter{Постановка задачи}
-Написать программу, провести замеры.
+\begin{itemize}
+	\item Написать программу для расчета \ce{^{13}C}-MFA на языке \CC.
+	\item Провести тестирование, сравнить скорость работы с существующими аналогами.
+\end{itemize}
 
 \chapter{Основная часть}
 \section{Khnum}
@@ -178,17 +207,50 @@
 	\bibitem{Application_other_2014}
 	Dieuaide-Noubhani M., Alonso A. P. (ed.). Plant metabolic flux analysis: methods and protocols. --- Humana Press, 2014.
 	
+	\bibitem{nitrogen_mfa}
+	Nilsson R., Jain M. Simultaneous tracing of carbon and nitrogen isotopes in human cells //Molecular BioSystems. --- 2016. --- Т. 12. --- №. 6. --- С. 1929--1937.
+	
+	\bibitem{sulfur_mfa}
+	Krömer J. O. et al. Accumulation of homolanthionine and activation of a novel pathway for isoleucine biosynthesis in Corynebacterium glutamicum McbR deletion strains //Journal of bacteriology. --- 2006. --- Т. 188. --- №. 2. --- С. 609--618.
+	
 	\bibitem{protocol}
 	Systems Metabolic Engineering. Methods and Protocols. // Под ред. Alper, Hal S. --- 1 изд. Humana Press, 2013. --- 474 с.
 	
+	\bibitem{protocol_animal}
+	(ed.). Metabolic flux analysis: methods and protocols. // Под ред. Krömer J. O., Nielsen L. K., Blank L. M. --- 1 изд. Humana Press, 2014. --- 329 с.
+	
+	\bibitem{protocol_plant}
+	Plant metabolic flux analysis: methods and protocols. // Под ред. Dieuaide-Noubhani M., Alonso A.P. --- 1 изд. Humana Press, 2014. --- 366 с.
+	
 	\bibitem{Wiechert_1997_1}
 	Wiechert W., de Graaf A. A. Bidirectional reaction steps in metabolic networks: I. Modeling and simulation of carbon isotope labeling experiments //Biotechnology and bioengineering. --- 1997. --- Т. 55. --- №. 1. --- С. 101--117.
+	
+	\bibitem{Wiechert_1997_2}
+	Wiechert W. et al. Bidirectional reaction steps in metabolic networks: II. Flux estimation and statistical analysis //Biotechnology and bioengineering. --- 1997. --- Т. 55. --- №. 1. --- С. 118--135.
+	
+	\bibitem{Wiechert_1999_3}
+	Wiechert W. et al. Bidirectional reaction steps in metabolic networks: III. Explicit solution and analysis of isotopomer labeling systems //Biotechnology and bioengineering. --- 1999. --- Т. 66. --- №. 2. --- С. 69--85.
+	
+	\bibitem{Wiechert_1999_4}
+	Möllney M. et al. Bidirectional reaction steps in metabolic networks: IV. Optimal design of isotopomer labeling experiments //Biotechnology and bioengineering. --- 1999. --- Т. 66. --- №. 2. --- С. 86---103.
+	
+	\bibitem{Direct_MFA}
+	Rantanen A. et al. Algorithms for 13C metabolic flux analysis. --- 2006.
+	
+	\bibitem{Markov_chain_MFA}
+	Huo Y., Ji P. Continuous-Time Markov Chain–Based Flux Analysis in Metabolism //Journal of Computational Biology. --- 2014. --- Т. 21. --- №. 9. --- С. 691-698.
+	
+	\bibitem{Fluxomer_MFA}
+	Srour O., Young J. D., Eldar Y. C. Fluxomers: a new approach for 13 C metabolic flux analysis //BMC systems biology. --- 2011. --- Т. 5. --- №. 1. --- С. 129.
 	
 	\bibitem{NMFA}
 	Wiechert W., Nöh K. Isotopically non-stationary metabolic flux analysis: complex yet highly informative //Current opinion in biotechnology. --- 2013. --- Т. 24. --- №. 6. --- С. 979--986.
 	
 	\bibitem{DMFA}
 	Leighty R. W., Antoniewicz M. R. Dynamic metabolic flux analysis (DMFA): a framework for determining fluxes at metabolic non-steady state //Metabolic engineering. --- 2011. --- Т. 13. --- №. 6. --- С. 745--755.
+	
+	\bibitem{formalizm_2017}
+	Borkum M. I. et al. Modeling framework for isotopic labeling of heteronuclear moieties //Journal of cheminformatics. --- 2017. --- Т. 9. --- №. 1. --- С. 1--11.
 	
 	\bibitem{EMU_2007}
 	Antoniewicz M. R., Kelleher J. K., Stephanopoulos G. Elementary metabolite units (EMU): a novel framework for modeling isotopic distributions //Metabolic engineering. --- 2007 --- Т. 9. --- №. 1. --- С. 68--86.
