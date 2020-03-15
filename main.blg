@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: unsrt.bst
+Database file #1: xampl.bib
+Warning--I didn't find a database entry for "Cancer_statistics"
+Warning--I didn't find a database entry for "Warburg_effect"
+Warning--I didn't find a database entry for "Diabetes_statistics"
+Warning--I didn't find a database entry for "Genentech_paper"
+Warning--I didn't find a database entry for "Application_cancer_2009"
+Warning--I didn't find a database entry for "Application_cancer_2012"
+Warning--I didn't find a database entry for "Application_cancer_2013"
+Warning--I didn't find a database entry for "Application_cancer_2015"
+Warning--I didn't find a database entry for "Application_cancer_2017"
+Warning--I didn't find a database entry for "Application_cancer_2018"
+Warning--I didn't find a database entry for "Application_cancer_2018_2"
+You've used 0 entries,
+            1791 wiz_defined-function locations,
+            474 strings with 4212 characters,
+and the built_in function-call counts, 20 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 7
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 4
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 2
+purify$ -- 0
+quote$ -- 0
+skip$ -- 0
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 3
+(There were 11 warnings)

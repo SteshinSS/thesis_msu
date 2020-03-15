@@ -7,7 +7,7 @@
 \usepackage{titling} % for shift margins
 \usepackage{blindtext} % for text-generation
 \usepackage{setspace} % to set interval
-
+\usepackage[numbers,sort&compress]{natbib} % for range cite [1-4]
 
 \begin{document}
 
@@ -37,7 +37,8 @@
 	\vfill
 	\begin{flushright}
 	Научный руководитель:\\
-	к.ф.м.н. М. С. Шуплецов
+	к.ф.м.н., доцент \\
+	Шуплецов М. С.
 	\end{flushright}
 	\vfill
 	\vfill
@@ -49,7 +50,7 @@
 
 \begin{abstract}
 В биологии и медицине встречается задача определения скорости метаболических потоков внутри клетки. 
-Один из методов решения этой задачи --- анализ метаболических потоков с использованием \ce{^{13}C}-углерода (\ce{^{13}C}-Metabolic Flux Analysis). 
+Один из методов решения этой задачи --- \ce{^{13}C}-Metabolic Flux Analysis --- анализ метаболических потоков с использованием  \ce{^{13}C}-углерода. 
 В этом методе, исследователи проводят эксперимент и обрабатывают его результаты на компьютере. Проблема в том, что современные программы для анализа метаболических потоков либо имеют закрытый код и платны для коммерческого использования, либо написаны неэффективно, из-за чего вычисления могут занимать недели для одного эксперимента. В этой работе проведен краткий обзор метода, написана эффективная программа для решения задачи и проведено сравнение с существующими аналогами.
 \end{abstract}
 
@@ -63,6 +64,9 @@
 
 В случае с эффектом Варбурга, открытие заключалось в изменении скорости химической реакции, протекающей внутри клетки. В случае с инсулином, решается задача метаболической инженерии --- увеличить скорость синтеза инсулина, не убив кишечную палочку. В обоих случаях надо уметь измерять скорости внутриклеточных химических реакций -- их называют потоками. Один из современных методов измерения потоков -- \emph{\ce{^{13}C}-Metabolic Flux Analysis} (далее \emph{MFA}), что переводится как анализ метаболических потоков. Этому методу посвящена наша работа.
 
+MFA имеет множество применений в исследованиях рака\cite{Application_cancer_2009, Application_cancer_2012, Application_cancer_2013, Application_cancer_2015, Application_cancer_2017, Application_cancer_2018, Application_cancer_2018_2}
+, в метаболической инженерии\cite{Application_engeneering_2009, Application_engeneering_2015, Application_engeneering_2017} и в других областях\cite{Application_other_2011, Application_other_2013, Application_other_2014}.
+
 \section{Эксперимент}
 \section{Компьютерное моделирование}
 
@@ -74,18 +78,59 @@
 \chapter{Основная часть}
 \chapter{Полученные результаты}
 
+
 \begin{thebibliography}{XXXX}
 	\bibitem{Cancer_statistics}
 	Всемирная Ассоциация Здравоохранения. Cancer [Электронный ресурс] URL: https://www.who.int/news-room/fact-sheets/detail/cancer (дата обращения: 12.03.2020)
 	
 	\bibitem{Warburg_effect}
-	Warburg O., Wind F., Negelein E. The metabolism of tumors in the body //The Journal of general physiology. – 1927. – Т. 8. – №. 6. – С. 519.
+	Warburg O., Wind F., Negelein E. The metabolism of tumors in the body //The Journal of general physiology.--- 1927. --- Т. 8. --- №. 6. --- С. 519.
 	
 	\bibitem{Diabetes_statistics}
-	Zimmet P. et al. Diabetes mellitus statistics on prevalence and mortality: facts and fallacies //Nature Reviews Endocrinology. – 2016. – Т. 12. – №. 10. – С. 616.
+	Zimmet P. et al. Diabetes mellitus statistics on prevalence and mortality: facts and fallacies //Nature Reviews Endocrinology. --- 2016. --- Т. 12. --- №. 10. --- С. 616.
 	
 	\bibitem{Genentech_paper}
-	Cohen S. N. et al. Construction of biologically functional bacterial plasmids in vitro //Proceedings of the National Academy of Sciences. – 1973. – Т. 70. – №. 11. – С. 3240-3244.
+	Cohen S. N. et al. Construction of biologically functional bacterial plasmids in vitro //Proceedings of the National Academy of Sciences. --- 1973. --- Т. 70. --- №. 11. --- С. 3240--3244.
+	
+	\bibitem{Application_cancer_2009}
+	Metallo C. M., Walther J. L., Stephanopoulos G. Evaluation of 13C isotopic tracers for metabolic flux analysis in mammalian cells //Journal of biotechnology. --- 2009. --- Т. 144. --- №. 3. --- С. 167--174.
+	
+	\bibitem{Application_cancer_2012}
+	Walther J. L. et al. Optimization of 13C isotopic tracers for metabolic flux analysis in mammalian cells //Metabolic engineering. --- 2012. --- Т. 14. --- №. 2. --- С. 162--171.
+	
+	\bibitem{Application_cancer_2013}
+	Hiller K., Metallo C. M. Profiling metabolic networks to study cancer metabolism //Current opinion in biotechnology. --- 2013. --- Т. 24. --- №. 1. --- С. 60--68.
+	
+	\bibitem{Application_cancer_2015}
+	Boroughs L. K., DeBerardinis R. J. Metabolic pathways promoting cancer cell survival and growth //Nature cell biology. --- 2015. --- Т. 17. --- №. 4. --- С. 351--359.
+	
+	\bibitem{Application_cancer_2017}
+	Dong W., Keibler M. A., Stephanopoulos G. Review of metabolic pathways activated in cancer cells as determined through isotopic labeling and network analysis //Metabolic engineering. --- 2017. --- Т. 43. --- С. 113--124.
+	
+	\bibitem{Application_cancer_2018}
+	Antoniewicz M. R. A guide to 13 C metabolic flux analysis for the cancer biologist //Experimental \& molecular medicine. --- 2018. --- Т. 50. --- №. 4. --- С. 1--13.
+	
+	\bibitem{Application_cancer_2018_2}
+	Badur M. G., Metallo C. M. Reverse engineering the cancer metabolic network using flux analysis to understand drivers of human disease //Metabolic engineering. --- 2018. --- Т. 45. --- С. 95--108.
+	
+	\bibitem{Application_engeneering_2009}
+	Nakahigashi K. et al. Systematic phenome analysis of Escherichia coli multiple‐knockout mutants reveals hidden reactions in central carbon metabolism //Molecular systems biology. --- 2009. --- Т. 5. --- №. 1.
+	
+	\bibitem{Application_engeneering_2015}
+	Crown S. B., Long C. P., Antoniewicz M. R. Integrated 13C-metabolic flux analysis of 14 parallel labeling experiments in Escherichia coli //Metabolic engineering. --- 2015. --- Т. 28. --- С. 151--158.
+	
+	\bibitem{Application_engeneering_2017}
+	Long C. P. et al. Enzyme I facilitates reverse flux from pyruvate to phosphoenolpyruvate in Escherichia coli //Nature communications. --- 2017. --- Т. 8. --- №. 1. --- С. 1--8.
+	
+	\bibitem{Application_other_2011}
+	Wahrheit J., Nicolae A., Heinzle E. Eukaryotic metabolism: measuring compartment fluxes //Biotechnology journal. --- 2011. --- Т. 6. --- №. 9. --- С. 1071--1085.
+	
+	\bibitem{Application_other_2013}
+	Metallo C. M., Vander Heiden M. G. Understanding metabolic regulation and its influence on cell physiology //Molecular cell. --- 2013. --- Т. 49. --- №. 3. --- С. 388--398.
+	
+	\bibitem{Application_other_2014}
+	Dieuaide-Noubhani M., Alonso A. P. (ed.). Plant metabolic flux analysis: methods and protocols. --- Humana Press, 2014.
+	
 \end{thebibliography}
 
 \end{document}          
