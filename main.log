@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  21 MAR 2020 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  21 MAR 2020 22:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1075,98 +1075,29 @@ Overfull \hbox (7.14229pt too wide) in paragraph at lines 65--68
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
 [3
 
-]
-Overfull \hbox (14.27989pt too wide) in paragraph at lines 88--89
-\T2A/cmr/m/it/12 Mass Isotopomer Distribution \T2A/cmr/m/n/12 (да-лее \T2A/cmr/
-m/it/12 MID\T2A/cmr/m/n/12 ) --- век-тор $\OML/cmm/m/it/12 M I D \OT1/cmr/m/n/1
-2 = [\OML/cmm/m/it/12 M[]; M[]; [] ; M[]\OT1/cmr/m/n/12 ]$\T2A/cmr/m/n/12 ,
- []
-
-[4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 95.
+] [4]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 97.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 95.
- [5] [6
-
-]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
+ [5] [6]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
 [7
 
-]
-Overfull \hbox (25.16473pt too wide) in paragraph at lines 148--148
-[][]\T2A/cmr/m/n/12 Добавить 
- []
+] [8
 
+] [9
 
-Overfull \hbox (25.16473pt too wide) in paragraph at lines 148--148
-[][]\T2A/cmr/m/n/12 Добавить 
- []
+] [10]
 
+LaTeX Warning: Reference `emu_reactions' on page 11 undefined on input line 230
+.
 
-Overfull \hbox (9.50186pt too wide) in paragraph at lines 151--151
-[][]\T2A/cmr/m/n/12 Пулы?  
- []
+[11
 
-
-Overfull \hbox (9.50186pt too wide) in paragraph at lines 151--151
-[][]\T2A/cmr/m/n/12 Пулы?  
- []
-
-
-Overfull \hbox (25.16472pt too wide) in paragraph at lines 156--156
-[][]\T2A/cmr/m/n/12 Дописать 
- []
-
-
-Overfull \hbox (11.46393pt too wide) in paragraph at lines 156--156
-\T2A/cmr/m/n/12 нефор- 
- []
-
-
-Overfull \hbox (4.28513pt too wide) in paragraph at lines 156--156
-\T2A/cmr/m/n/12 маль- 
- []
-
-
-Overfull \hbox (25.16472pt too wide) in paragraph at lines 156--156
-[][]\T2A/cmr/m/n/12 Дописать 
- []
-
-
-Overfull \hbox (11.46393pt too wide) in paragraph at lines 156--156
-\T2A/cmr/m/n/12 нефор- 
- []
-
-
-Overfull \hbox (4.28513pt too wide) in paragraph at lines 156--156
-\T2A/cmr/m/n/12 маль- 
- []
-
-[8
-
-]
-
-LaTeX Warning: Reference `emu_reactions' on page 9 undefined on input line 178.
-
-
-[9
-
-]
-Overfull \hbox (15.05331pt too wide) in paragraph at lines 203--203
-[][]\T2A/cmr/m/n/12 какого?  
- []
-
-
-Overfull \hbox (15.05331pt too wide) in paragraph at lines 203--203
-[][]\T2A/cmr/m/n/12 какого?  
- []
-
-[10
-
-] [11] [12
+] [12
 
 ] [13
 
@@ -1186,7 +1117,7 @@ Overfull \hbox (15.05331pt too wide) in paragraph at lines 203--203
 {\cyrillictext \CYRP \cyrr \cyri \cyrl \cyro \cyrzh \cyre \cyrn \cyri \cyre } A
 .
 
-Overfull \hbox (42.51906pt too wide) in paragraph at lines 291--291
+Overfull \hbox (42.51906pt too wide) in paragraph at lines 272--272
 |\T2A/cmr/bx/n/24.88 Список про-грамм для MFA-расчетов| 
  []
 
@@ -1197,24 +1128,24 @@ Overfull \hbox (42.51906pt too wide) in paragraph at lines 291--291
 {\cyrillictext \CYRP \cyrr \cyri \cyrl \cyro \cyrzh \cyre \cyrn \cyri \cyre } B
 .
 
-Overfull \hbox (3.28091pt too wide) in paragraph at lines 303--303
+Overfull \hbox (3.28091pt too wide) in paragraph at lines 284--284
 |\T2A/cmr/bx/n/24.88 Формальное опре-де-ле-ние ме-та-бо-
  []
 
 [18
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
 []\T2A/cmr/m/n/12 Всемирная Ас-со-ци-а-ция Здра-во-охра-не-ния. Cancer [Элек-
  []
 
 
-Underfull \hbox (badness 3668) in paragraph at lines 320--321
+Underfull \hbox (badness 3668) in paragraph at lines 301--302
 \T2A/cmr/m/n/12 трон-ный ре-сурс] URL: https://www.who.int/news-room/fact-
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 335--336
+Underfull \hbox (badness 2635) in paragraph at lines 316--317
 []\T2A/cmr/m/n/12 Walther J. L. et al. Optimization of 13C isotopic tracers
  []
 
@@ -1222,27 +1153,27 @@ Underfull \hbox (badness 2635) in paragraph at lines 335--336
 
 
 ]
-Underfull \hbox (badness 1721) in paragraph at lines 362--363
+Underfull \hbox (badness 1721) in paragraph at lines 343--344
 []\T2A/cmr/m/n/12 Wahrheit J., Nicolae A., Heinzle E. Eukaryotic metabolism:
  []
 
 [20]
-Underfull \hbox (badness 1117) in paragraph at lines 392--393
+Underfull \hbox (badness 1117) in paragraph at lines 373--374
 []\T2A/cmr/m/n/12 Wiechert W. et al. Bidirectional reaction steps in metabolic
  []
 
 
-Underfull \hbox (badness 6910) in paragraph at lines 392--393
+Underfull \hbox (badness 6910) in paragraph at lines 373--374
 \T2A/cmr/m/n/12 networks: II. Flux estimation and statistical analysis //
  []
 
 
-Underfull \hbox (badness 1117) in paragraph at lines 395--396
+Underfull \hbox (badness 1117) in paragraph at lines 376--377
 []\T2A/cmr/m/n/12 Wiechert W. et al. Bidirectional reaction steps in metabolic
  []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 398--399
+Underfull \hbox (badness 1867) in paragraph at lines 379--380
 []\T2A/cmr/m/n/12 M^^Dollney M. et al. Bidirectional reaction steps in metaboli
 c
  []
@@ -1253,36 +1184,41 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 26599 strings out of 492609
- 516252 string characters out of 6131462
- 568468 words of memory out of 5000000
- 30127 multiletter control sequences out of 15000+600000
- 555063 words of font info for 74 fonts, out of 8000000 for 9000
+ 26493 strings out of 492609
+ 513321 string characters out of 6131462
+ 559176 words of memory out of 5000000
+ 30004 multiletter control sequences out of 15000+600000
+ 561409 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,18n,81p,1803b,1034s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,18n,81p,1494b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0600.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (24 pages, 452556 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfbx0600.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx12
+00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm070
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfti1200.pfb>
+Output written on main.pdf (24 pages, 490376 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
+ 219 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
