@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  22 MAR 2020 22:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  22 MAR 2020 23:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1387,72 +1387,93 @@ Package pdftex.def Info: ./pics/EMU_reaction_3.png  used on input line 358.
 Overfull \vbox (6.16562pt too high) detected at line 358
  []
 
-[15
+<./pics/full_emu_map.png, id=130, 2306.6175pt x 1818.795pt>
+File: ./pics/full_emu_map.png Graphic file (type png)
+<use ./pics/full_emu_map.png>
+Package pdftex.def Info: ./pics/full_emu_map.png  used on input line 375.
+(pdftex.def)             Requested size: 230.67526pt x 181.89015pt.
 
- <./pics/EMU_reaction_1.png> <./pics/EMU_reaction_2.png> <./pics/EMU_reaction_3
-.png>] [16
+Overfull \hbox (22.99979pt too wide) in paragraph at lines 382--393
+ [][] 
+ []
+
+[15 <./pics/EMU_reaction_1.png> <./pics/EMU_reaction_2.png> <./pics/EMU_reactio
+n_3.png> <./pics/full_emu_map.png>]
+Underfull \hbox (badness 1009) in paragraph at lines 424--424
+[]\T2A/cmr/m/n/14.4 Таблица 2.4: |Спи-сок ре-ак-ций, для
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 430--431
+\T2A/cmr/m/n/14.4 ори-ен-ти-ро-ван-ный граф, вер-ши-ны
+ []
+
+[16
+
 
 ] [17
 
-]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
-[18
+] [18
 
 ]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 [19
 
 ]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 5.
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
 [20
 
 ]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 6.
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 5.
 [21
+
+]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 6.
+[22
 
 ]
 {\cyrillictext \CYRP \cyrr \cyri \cyrl \cyro \cyrzh \cyre \cyrn \cyri \cyre } A
 .
-[22
+[23
 
 
 ]
 {\cyrillictext \CYRP \cyrr \cyri \cyrl \cyro \cyrzh \cyre \cyrn \cyri \cyre } B
 .
 
-Overfull \hbox (13.14693pt too wide) in paragraph at lines 430--430
+Overfull \hbox (13.14693pt too wide) in paragraph at lines 487--487
 |\T2A/cmr/bx/n/35.83 Формальное опре-де-ле-ние ме-
  []
 
-[23
+[24
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 []\T2A/cmr/m/n/14.4 Всемирная Ас-со-ци-а-ция Здра-во-охра-не-ния. Cancer [Элек-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 \T2A/cmr/m/n/14.4 трон-ный ре-сурс] URL: https://www.who.int/news-room/fact-
  []
 
-[24
+[25
 
 
-] [25]
-Underfull \hbox (badness 4024) in paragraph at lines 525--526
+] [26]
+Underfull \hbox (badness 4024) in paragraph at lines 582--583
 []\T2A/cmr/m/n/14.4 M^^Dollney M. et al. Bidirectional reaction steps in metabo
 lic
  []
 
-[26] [27] (./main.aux) ) 
+[27] [28] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 28450 strings out of 492609
- 548331 string characters out of 6131462
- 602233 words of memory out of 5000000
- 31917 multiletter control sequences out of 15000+600000
- 557950 words of font info for 81 fonts, out of 8000000 for 9000
+ 28479 strings out of 492609
+ 548718 string characters out of 6131462
+ 602266 words of memory out of 5000000
+ 31937 multiletter control sequences out of 15000+600000
+ 561852 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,94p,1494b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a
@@ -1472,14 +1493,14 @@ lic/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx207
 4.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx3583.pfb></usr/share/te
 xmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/publ
 ic/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.
-pfb>
-Output written on main.pdf (27 pages, 1270597 bytes).
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.pfb>
+Output written on main.pdf (28 pages, 1408956 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
+ 257 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 199 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 204 words of extra memory for PDF output out of 10000 (max. 10000000)
 

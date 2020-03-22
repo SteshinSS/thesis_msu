@@ -324,7 +324,7 @@ $$ \boldsymbol{v} = ker(\boldsymbol{S}) \cdot \boldsymbol{v}_{free}$$
 \begin{table}
 	\begin{center}
 		\begin{tabular}{c | c}
-			EMU-реакции & MID\\
+			EMU-реакция & MID\\
 			\hline
 			\multirow{5}{*}[-1mm]{
 				\begin{minipage}{0.3\linewidth}
@@ -368,7 +368,64 @@ $$ \boldsymbol{v} = ker(\boldsymbol{S}) \cdot \boldsymbol{v}_{free}$$
 	\end{center}
 \end{table}
 
-Пусть на картинке метаболическая карта клетки. Требуется найти MID метаболита $F$. Будем искать MID EMU $F_{123}$. Он формируется в EMU-реакции $D_{123} = F_{123}$, поэтому надо узнать MID EMU $D_{123}$. Он задается двумя EMU-реакциями: $B_{123} = D_{123}$ и $B_{23} + C_1 = D_{123}$. Теперь надо определить MID $B_{123}$, $B_{23}$ и $C_1$. С помощью поиска в глубину, найдем список EMU, MID которых надо узнать и заодно составим список EMU-реакций. Он такой.
+\begin{figure}[b]
+	\centering
+	\begin{minipage}[l]{.5\textwidth}
+		\centering
+		\includegraphics[scale=0.1]{full_emu_map.png}
+		\caption{Метаболическая сеть}
+		\label{emu_example}
+	\end{minipage}%
+	\begin{minipage}[r]{.5\textwidth}
+		\centering
+		\small
+		\begin{tabular}{c c c}
+			\hline
+			№ & Реакция & Переходы трейсера\\
+			\hline
+			1 & $A \to B$ & abc $\leftrightarrow$ abc\\
+			2 и 3 & B $\leftrightarrow$ D & abc $\leftrightarrow$ abc\\
+			4 & B $\to$ C + E & abc $\to$bc + a\\
+			5 & B+C $\to$ D+E+E & abc+de $\to$ bcd+a+e\\
+			6 & D $\to$ F & abc $\to$ abc\\
+			\hline
+		\end{tabular}
+		\captionof{table}{Ее химические уравнения}
+		\label{emu_example_table}
+	\end{minipage}
+\end{figure}
+
+
+\clearpage
+\begin{wraptable}{l}{0.5\linewidth}
+	\begin{tabular}{c c c}
+		\hline
+		№ & EMU-реакция & Размер\\
+		\hline
+		6 & $D_{123} \to F_{123}$ & $3 = 3$\\
+		2 & $B_{123} \to D_{123}$ & $3 = 3$\\
+		5 & $B_{23} + C_1 \to D_{123}$ & $2 + 1 = 3$\\
+		1 & $A_{123} \to B_{123}$ & $3 = 3$\\
+		3 & $D_{123} \to B_{123}$ & $3 = 3$\\
+		1 & $A_{23} \to B_{23}$ & $2 = 2$\\
+		3 & $D_{23} \to B_{23}$ & $2 = 2$\\
+		2 & $B_{23} \to D_{23}$ & $2 = 2$\\
+		5 & $B_3 + C_1 \to D_{23}$ & $1 + 1 = 2$\\
+		4 & $B_2 \to C_1$ & $1 = 1$\\
+		1 & $A_2 \to B_2$ & $1 = 1$\\
+		3 & $D_2 \to B_2$ & $1 = 1$\\
+		2 & $B_2 \to D_2$ & $1 = 1$\\
+		5 & $B_3 \to D_2$ & $1 = 1$\\
+		1 & $A_3 \to B_3$ & $1 = 1$\\
+		3 & $D_3 \to B_3$ & $1 = 1$\\
+		2 & $B_3 \to D_3$ & $1 = 1$\\
+		5 & $C_1 \to D_3$ & $1 = 1$\\
+	\end{tabular}
+	\caption{Список реакций, для определения MID $F_{123}$}
+	\label{all_emu_reactions}
+\end{wraptable}
+
+Пусть дана метаболическая сеть с рис. \ref{emu_example}. Требуется найти MID EMU $F_{123}$. Он формируется в EMU-реакции $D_{123} = F_{123}$, поэтому надо узнать MID EMU $D_{123}$. Он задается двумя EMU-реакциями: $B_{123} = D_{123}$ и $B_{23} + C_1 = D_{123}$. Теперь надо определить MID $B_{123}$, $B_{23}$ и $C_1$. С помощью поиска в глубину, найдем список EMU, MID которых надо узнать и заодно составим список EMU-реакций. Список в таблице \ref{all_emu_reactions}.
 
 Для всех EMU-реакций одного размера построим EMU-граф. Это ориентированный граф, вершины которого --- части EMU-уравнений. Заметим, что вершины, не имеющие входящих ребер, либо состоят из EMU меньшего уровня, либо входные EMU, чьи MID известны. 
 
