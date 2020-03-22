@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  22 MAR 2020 23:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  23 MAR 2020 00:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1237,11 +1237,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [4]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
-<./pics/experiment.png, id=50, 4336.2pt x 1854.93pt>
+<./pics/experiment.png, id=50, 3824.2875pt x 1653.17625pt>
 File: ./pics/experiment.png Graphic file (type png)
 <use ./pics/experiment.png>
 Package pdftex.def Info: ./pics/experiment.png  used on input line 95.
-(pdftex.def)             Requested size: 469.47049pt x 200.81628pt.
+(pdftex.def)             Requested size: 469.47049pt x 202.93839pt.
 [5
 
 ]
@@ -1304,16 +1304,16 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
-<./pics/direct_simulation.png, id=76, 1620.0525pt x 1915.155pt>
+<./pics/direct_simulation.png, id=76, 1177.39874pt x 1680.2775pt>
 File: ./pics/direct_simulation.png Graphic file (type png)
 <use ./pics/direct_simulation.png>
 Package pdftex.def Info: ./pics/direct_simulation.png  used on input line 150.
-(pdftex.def)             Requested size: 234.73524pt x 277.47119pt.
-<./pics/inverse_problem.png, id=77, 3143.745pt x 3276.24pt>
+(pdftex.def)             Requested size: 187.78532pt x 267.97816pt.
+<./pics/inverse_problem.png, id=77, 3276.24pt x 3041.3625pt>
 File: ./pics/inverse_problem.png Graphic file (type png)
 <use ./pics/inverse_problem.png>
 Package pdftex.def Info: ./pics/inverse_problem.png  used on input line 156.
-(pdftex.def)             Requested size: 234.73524pt x 244.60759pt.
+(pdftex.def)             Requested size: 281.68515pt x 261.45926pt.
  [7 <./pics/emus/000.png> <./pics/emus/001.png> <./pics/emus/010.png> <./pics/e
 mus/100.png> <./pics/emus/011.png> <./pics/emus/101.png> <./pics/emus/110.png> 
 <./pics/emus/111.png>]
@@ -1387,11 +1387,11 @@ Package pdftex.def Info: ./pics/EMU_reaction_3.png  used on input line 358.
 Overfull \vbox (6.16562pt too high) detected at line 358
  []
 
-<./pics/full_emu_map.png, id=130, 2306.6175pt x 1818.795pt>
+<./pics/full_emu_map.png, id=130, 2020.54875pt x 1668.2325pt>
 File: ./pics/full_emu_map.png Graphic file (type png)
 <use ./pics/full_emu_map.png>
 Package pdftex.def Info: ./pics/full_emu_map.png  used on input line 375.
-(pdftex.def)             Requested size: 230.67526pt x 181.89015pt.
+(pdftex.def)             Requested size: 222.26105pt x 183.50613pt.
 
 Overfull \hbox (22.99979pt too wide) in paragraph at lines 382--393
  [][] 
@@ -1471,7 +1471,7 @@ lic
 Here is how much of TeX's memory you used:
  28479 strings out of 492609
  548718 string characters out of 6131462
- 602266 words of memory out of 5000000
+ 602265 words of memory out of 5000000
  31937 multiletter control sequences out of 15000+600000
  561852 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1497,7 +1497,7 @@ ic/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000
 mf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.
 pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on main.pdf (28 pages, 1408956 bytes).
+Output written on main.pdf (28 pages, 1463959 bytes).
 PDF statistics:
  257 PDF objects out of 1000 (max. 8388607)
  148 compressed objects within 2 object streams
