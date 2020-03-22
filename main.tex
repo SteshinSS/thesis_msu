@@ -20,6 +20,7 @@
 \usepackage{array, booktabs} % for timeline
 
 
+\newcommand{\foo}{\makebox[0pt]{\textbullet}\hskip-0.5pt\vrule width 1pt\hspace{\labelsep}}
 \renewcommand{\appendixtocname}{Приложения}
 
 \titleformat{\chapter}[display]
@@ -106,21 +107,22 @@
 
 <<Взвешивать>> молекулы можно с помощью газовой хромато-масс-\\спектрометрии, при этом для каждого метаболита на выходе получим так называемый \emph{Mass Isotopomer Distribution} (далее \emph{MID}) --- вектор $\boldsymbol{M\!I\!D} = [M_0, M_1, \ldots, M_n]$, где $M_i$ --- массовая доля метаболита с $i$ атомами трейсера, и $\sum_{i = 0}^{n} = 1$ (См. таблицу \ref{MID}). Набор таких векторов --- это распределение трейсера, 
 \begin{wraptable}{r}{0.4\linewidth}
+	\renewcommand{\arraystretch}{1.8}
 	\begin{tabular}{c | c}
 		\hline
-		Меченность атомов & Вес молекулы\\ 
+		 Меченность & Вес молекулы\\ 
 		\hline
-		\rule{0pt}{4ex} \includegraphics{emus/000.png} & $m_0$\\
+		 \includegraphics{emus/000.png} & $m_0$\\
 		\hline
-		\rule{0pt}{4ex} \includegraphics{emus/001.png} & \\
-		\rule{0pt}{4ex} \includegraphics{emus/010.png} & $m_0 + 1$\\
-		\rule{0pt}{4ex} \includegraphics{emus/100.png} & \\
+		 \includegraphics{emus/001.png} & \\
+		\includegraphics{emus/010.png} & $m_0 + 1$\\
+		 \includegraphics{emus/100.png} & \\
 		\hline
-		\rule{0pt}{4ex} \includegraphics{emus/011.png} & \\
-		\rule{0pt}{4ex} \includegraphics{emus/101.png} & $m_0 + 2$\\
-		\rule{0pt}{4ex} \includegraphics{emus/110.png} & \\
+		 \includegraphics{emus/011.png} & \\
+		 \includegraphics{emus/101.png} & $m_0 + 2$\\
+		 \includegraphics{emus/110.png} & \\
 		\hline
-		\rule{0pt}{4ex} \includegraphics{emus/111.png} & $m_0 + 3$\\
+		  \includegraphics{emus/111.png} & $m_0 + 3$\\
 	\end{tabular}
 	\caption{Распределение трейсера и вес молекулы}
 	\label{MID}
@@ -162,12 +164,28 @@
 \end{itemize} 
 Конечно, обратная задача может иметь несколько решений, поэтому результат должен проанализироваться биологом. Схема на рис. \ref{inverse_problem}. Формальное описание и решение модели в главе 2.
 
+\begin{wraptable}[20]{l}{0.4\linewidth}
+	\renewcommand\arraystretch{1.4}
+	\captionsetup{singlelinecheck=false, labelfont=sc, labelsep=quad}
+	\caption{История}\vskip -1.5ex
+	\begin{tabular}{@{\,}r <{\hskip 2pt} !{\foo} >{\raggedright\arraybackslash}p{4cm}}
+		\toprule
+		\addlinespace[1.5ex]
+		1982 & Первый MFA с углеродом\cite{first_MFA}\\
+		1988 & Появление термина <<изотопомер>>\\
+		1997 & W. Weichert, изотопомерная модель\cite{Wiechert_1997_1, Wiechert_1997_2}\\
+		1999 & W. Weichert, кумомерная модель\cite{Wiechert_1999_3, Wiechert_1999_4}\\
+		2007 & M. Antoniewicz, EMU модель\cite{EMU_2007}\\
+	\end{tabular}
+\end{wraptable}
+
+
 \subsubsection{Историческая справка}
 
-	В восьмидесятые годы углерод начали использовать для анализа метаболических потоков\cite{first_MFA}. В 1997 году	
-	Wolfgang Wiechert разработал удобную модель распространения углерода\cite{Wiechert_1997_1, Wiechert_1997_2}. Она использовала понятие \emph{изотопомера} --- это молекулы одного вещества, имеющие одинаковое количество атомов изотопов, вообще говоря в разных позициях. За два года автор разработал математически эквивалентную модель кумомеров\cite{Wiechert_1999_3, Wiechert_1999_4}, которая быстрее расчитывалась на компьютере. В 2007 году Maciek R. Antoniewicz создал EMU-модель\cite{EMU_2007}, которая остается самой популярной среди программных реализаций. Так же существуют прямые модели\cite{Direct_MFA}, вероятностные модели на основе Марковских цепей\cite{Markov_chain_MFA} и другие\cite{Fluxomer_MFA}. В этой работе подробно разбирается EMU-модель.
+	В восьмидесятые годы углерод начали использовать для анализа метаболических потоков. В 1997 году	
+	W. Wiechert разработал удобную модель распространения углерода. Она использовала понятие \emph{изотопомера} --- это молекулы одного вещества, имеющие одинаковое количество атомов изотопов, вообще говоря в разных позициях. За два года автор разработал математически эквивалентную модель кумомеров, которая быстрее расчитывалась на компьютере. В 2007 году M. Antoniewicz создал EMU-модель, которая остается самой популярной среди программных реализаций. Так же существуют прямые модели\cite{Direct_MFA}, вероятностные модели на основе Марковских цепей\cite{Markov_chain_MFA} и другие\cite{Fluxomer_MFA}. В этой работе подробно разбирается EMU-модель.
 
-
+\clearpage
 \subsection{Компьютерные программы}
 Существует несколько программ для \ce{^{13}C}-MFA расчетов (См. приложение А). 
 План: провести замеры -> дописать список программ -> дописать этот раздел.

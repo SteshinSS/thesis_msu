@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  22 MAR 2020 20:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  22 MAR 2020 21:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1051,20 +1051,20 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1101,7 +1101,7 @@ LaTeX Font Info:    ... okay on input line 33.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Package chemgreek Info: Activating mapping `default' on line 33.
+Package chemgreek Info: Activating mapping `default' on line 34.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1168,20 +1168,20 @@ ABD: EveryShipout initializing macros
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 33.
+loading the todonotes package. on input line 34.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 <./pics/logo.png, id=29, 401.5pt x 397.485pt>
 File: ./pics/logo.png Graphic file (type png)
 <use ./pics/logo.png>
-Package pdftex.def Info: ./pics/logo.png  used on input line 38.
+Package pdftex.def Info: ./pics/logo.png  used on input line 39.
 (pdftex.def)             Requested size: 104.56342pt x 103.51347pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 51.
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 51.
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1233,7 +1233,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <./pics/experiment.png, id=50, 4336.2pt x 1854.93pt>
 File: ./pics/experiment.png Graphic file (type png)
 <use ./pics/experiment.png>
-Package pdftex.def Info: ./pics/experiment.png  used on input line 91.
+Package pdftex.def Info: ./pics/experiment.png  used on input line 92.
 (pdftex.def)             Requested size: 469.47049pt x 200.81628pt.
 [5
 
@@ -1241,159 +1241,160 @@ Package pdftex.def Info: ./pics/experiment.png  used on input line 91.
 <./pics/emus/000.png, id=57, 66.0066pt x 22.1628pt>
 File: ./pics/emus/000.png Graphic file (type png)
 <use ./pics/emus/000.png>
-Package pdftex.def Info: ./pics/emus/000.png  used on input line 113.
+Package pdftex.def Info: ./pics/emus/000.png  used on input line 115.
 (pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
 <./pics/emus/001.png, id=58, 66.0066pt x 22.1628pt>
 File: ./pics/emus/001.png Graphic file (type png)
 <use ./pics/emus/001.png>
-Package pdftex.def Info: ./pics/emus/001.png  used on input line 115.
+Package pdftex.def Info: ./pics/emus/001.png  used on input line 117.
 (pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
 <./pics/emus/010.png, id=59, 66.0066pt x 22.1628pt>
 File: ./pics/emus/010.png Graphic file (type png)
 <use ./pics/emus/010.png>
-Package pdftex.def Info: ./pics/emus/010.png  used on input line 116.
+Package pdftex.def Info: ./pics/emus/010.png  used on input line 118.
 (pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
 <./pics/emus/100.png, id=60, 66.0066pt x 22.1628pt>
 File: ./pics/emus/100.png Graphic file (type png)
 <use ./pics/emus/100.png>
-Package pdftex.def Info: ./pics/emus/100.png  used on input line 117.
+Package pdftex.def Info: ./pics/emus/100.png  used on input line 119.
 (pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
 <./pics/emus/011.png, id=61, 66.0066pt x 22.1628pt>
 File: ./pics/emus/011.png Graphic file (type png)
 <use ./pics/emus/011.png>
-Package pdftex.def Info: ./pics/emus/011.png  used on input line 119.
+Package pdftex.def Info: ./pics/emus/011.png  used on input line 121.
 (pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
 <./pics/emus/101.png, id=62, 66.0066pt x 22.1628pt>
 File: ./pics/emus/101.png Graphic file (type png)
 <use ./pics/emus/101.png>
-Package pdftex.def Info: ./pics/emus/101.png  used on input line 120.
+Package pdftex.def Info: ./pics/emus/101.png  used on input line 122.
 (pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
 <./pics/emus/110.png, id=63, 66.0066pt x 22.1628pt>
 File: ./pics/emus/110.png Graphic file (type png)
 <use ./pics/emus/110.png>
-Package pdftex.def Info: ./pics/emus/110.png  used on input line 121.
+Package pdftex.def Info: ./pics/emus/110.png  used on input line 123.
 (pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
 <./pics/emus/111.png, id=64, 66.0066pt x 22.1628pt>
 File: ./pics/emus/111.png Graphic file (type png)
 <use ./pics/emus/111.png>
-Package pdftex.def Info: ./pics/emus/111.png  used on input line 123.
+Package pdftex.def Info: ./pics/emus/111.png  used on input line 125.
 (pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
 
-Overfull \hbox (46.6058pt too wide) in paragraph at lines 109--125
-[][] 
- []
-
-
-Underfull \hbox (badness 2393) in paragraph at lines 125--125
+Underfull \hbox (badness 2393) in paragraph at lines 127--127
 []\T2A/cmr/m/n/14.4 Таблица 1.1: |Рас-пре-де-ле-ние
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--127
+Underfull \hbox (badness 10000) in paragraph at lines 108--129
 \T2A/cmr/m/n/14.4 трей-се-ра,
  []
 
 [6 <./pics/experiment.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 135.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 137.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 135.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 137.
 <./pics/direct_simulation.png, id=76, 1620.0525pt x 1915.155pt>
 File: ./pics/direct_simulation.png Graphic file (type png)
 <use ./pics/direct_simulation.png>
-Package pdftex.def Info: ./pics/direct_simulation.png  used on input line 145.
+Package pdftex.def Info: ./pics/direct_simulation.png  used on input line 147.
 (pdftex.def)             Requested size: 234.73524pt x 277.47119pt.
 <./pics/inverse_problem.png, id=77, 3143.745pt x 3276.24pt>
 File: ./pics/inverse_problem.png Graphic file (type png)
 <use ./pics/inverse_problem.png>
-Package pdftex.def Info: ./pics/inverse_problem.png  used on input line 151.
+Package pdftex.def Info: ./pics/inverse_problem.png  used on input line 153.
 (pdftex.def)             Requested size: 234.73524pt x 244.60759pt.
  [7 <./pics/emus/000.png> <./pics/emus/001.png> <./pics/emus/010.png> <./pics/e
 mus/100.png> <./pics/emus/011.png> <./pics/emus/101.png> <./pics/emus/110.png> 
 <./pics/emus/111.png>]
-[8 <./pics/direct_simulation.png> <./pics/inverse_problem.png>]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
-[9
+Overfull \hbox (0.7334pt too wide) in paragraph at lines 185--187
+\T2A/cmr/m/n/14.4 поль-зо-вать для ана-ли-за ме-та-бо-ли-че-ских по-
+ []
 
-] [10
+[8 <./pics/direct_simulation.png> <./pics/inverse_problem.png>] [9
+
+]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
+[10
 
 ] [11
 
-] [12]
-Overfull \hbox (12.74725pt too wide) in paragraph at lines 274--275
+] [12
+
+] [13]
+Overfull \hbox (12.74725pt too wide) in paragraph at lines 292--293
 \T2A/cmr/m/n/14.4 Опишем мо-дель EMU, пред-ло-жен-ную Ма-че-ком Ан-то-ни-е-ви-ч
 ем в 2007 году[[]].
  []
 
-[13
-
-] [14
+[14
 
 ] [15
 
-]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
-[16
+] [16
 
 ]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 [17
 
 ]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 5.
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
 [18
 
 ]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 6.
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 5.
 [19
+
+]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 6.
+[20
 
 ]
 {\cyrillictext \CYRP \cyrr \cyri \cyrl \cyro \cyrzh \cyre \cyrn \cyri \cyre } A
 .
-[20
+[21
 
 
 ]
 {\cyrillictext \CYRP \cyrr \cyri \cyrl \cyro \cyrzh \cyre \cyrn \cyri \cyre } B
 .
 
-Overfull \hbox (13.14693pt too wide) in paragraph at lines 347--347
+Overfull \hbox (13.14693pt too wide) in paragraph at lines 365--365
 |\T2A/cmr/bx/n/35.83 Формальное опре-де-ле-ние ме-
  []
 
-[21
+[22
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 364--365
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 []\T2A/cmr/m/n/14.4 Всемирная Ас-со-ци-а-ция Здра-во-охра-не-ния. Cancer [Элек-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--365
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 \T2A/cmr/m/n/14.4 трон-ный ре-сурс] URL: https://www.who.int/news-room/fact-
  []
 
-[22
+[23
 
 
-] [23]
-Underfull \hbox (badness 4024) in paragraph at lines 442--443
+] [24]
+Underfull \hbox (badness 4024) in paragraph at lines 460--461
 []\T2A/cmr/m/n/14.4 M^^Dollney M. et al. Bidirectional reaction steps in metabo
 lic
  []
 
-[24] [25] (./main.aux) ) 
+[25] [26] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 28364 strings out of 492609
- 546733 string characters out of 6131462
- 600567 words of memory out of 5000000
- 31842 multiletter control sequences out of 15000+600000
- 557166 words of font info for 80 fonts, out of 8000000 for 9000
+ 28367 strings out of 492609
+ 546761 string characters out of 6131462
+ 600599 words of memory out of 5000000
+ 31844 multiletter control sequences out of 15000+600000
+ 557950 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,94p,1494b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a
@@ -1411,15 +1412,16 @@ msfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx06
 exmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/pub
 lic/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx207
 4.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx3583.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfti1440.pfb>
-Output written on main.pdf (25 pages, 1098426 bytes).
+xmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.
+pfb>
+Output written on main.pdf (26 pages, 1105173 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
+ 233 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
