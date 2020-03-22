@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  22 MAR 2020 19:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  22 MAR 2020 20:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1230,51 +1230,101 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [4]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
+<./pics/experiment.png, id=50, 4336.2pt x 1854.93pt>
+File: ./pics/experiment.png Graphic file (type png)
+<use ./pics/experiment.png>
+Package pdftex.def Info: ./pics/experiment.png  used on input line 91.
+(pdftex.def)             Requested size: 469.47049pt x 200.81628pt.
 [5
 
 ]
-<./pics/experiment.png, id=55, 4336.2pt x 1854.93pt>
-File: ./pics/experiment.png Graphic file (type png)
-<use ./pics/experiment.png>
-Package pdftex.def Info: ./pics/experiment.png  used on input line 98.
-(pdftex.def)             Requested size: 469.47049pt x 200.81628pt.
- [6 <./pics/experiment.png>]
-<./pics/direct_simulation.png, id=68, 1620.0525pt x 1915.155pt>
-File: ./pics/direct_simulation.png Graphic file (type png)
-<use ./pics/direct_simulation.png>
-Package pdftex.def Info: ./pics/direct_simulation.png  used on input line 117.
-(pdftex.def)             Requested size: 234.73524pt x 277.47119pt.
-<./pics/inverse_problem.png, id=69, 3143.745pt x 3276.24pt>
-File: ./pics/inverse_problem.png Graphic file (type png)
-<use ./pics/inverse_problem.png>
-Package pdftex.def Info: ./pics/inverse_problem.png  used on input line 123.
-(pdftex.def)             Requested size: 234.73524pt x 244.60759pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 131.
+<./pics/emus/000.png, id=57, 66.0066pt x 22.1628pt>
+File: ./pics/emus/000.png Graphic file (type png)
+<use ./pics/emus/000.png>
+Package pdftex.def Info: ./pics/emus/000.png  used on input line 113.
+(pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
+<./pics/emus/001.png, id=58, 66.0066pt x 22.1628pt>
+File: ./pics/emus/001.png Graphic file (type png)
+<use ./pics/emus/001.png>
+Package pdftex.def Info: ./pics/emus/001.png  used on input line 115.
+(pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
+<./pics/emus/010.png, id=59, 66.0066pt x 22.1628pt>
+File: ./pics/emus/010.png Graphic file (type png)
+<use ./pics/emus/010.png>
+Package pdftex.def Info: ./pics/emus/010.png  used on input line 116.
+(pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
+<./pics/emus/100.png, id=60, 66.0066pt x 22.1628pt>
+File: ./pics/emus/100.png Graphic file (type png)
+<use ./pics/emus/100.png>
+Package pdftex.def Info: ./pics/emus/100.png  used on input line 117.
+(pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
+<./pics/emus/011.png, id=61, 66.0066pt x 22.1628pt>
+File: ./pics/emus/011.png Graphic file (type png)
+<use ./pics/emus/011.png>
+Package pdftex.def Info: ./pics/emus/011.png  used on input line 119.
+(pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
+<./pics/emus/101.png, id=62, 66.0066pt x 22.1628pt>
+File: ./pics/emus/101.png Graphic file (type png)
+<use ./pics/emus/101.png>
+Package pdftex.def Info: ./pics/emus/101.png  used on input line 120.
+(pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
+<./pics/emus/110.png, id=63, 66.0066pt x 22.1628pt>
+File: ./pics/emus/110.png Graphic file (type png)
+<use ./pics/emus/110.png>
+Package pdftex.def Info: ./pics/emus/110.png  used on input line 121.
+(pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
+<./pics/emus/111.png, id=64, 66.0066pt x 22.1628pt>
+File: ./pics/emus/111.png Graphic file (type png)
+<use ./pics/emus/111.png>
+Package pdftex.def Info: ./pics/emus/111.png  used on input line 123.
+(pdftex.def)             Requested size: 66.00644pt x 22.16273pt.
+
+Overfull \hbox (46.6058pt too wide) in paragraph at lines 109--125
+[][] 
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 125--125
+[]\T2A/cmr/m/n/14.4 Таблица 1.1: |Рас-пре-де-ле-ние
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--127
+\T2A/cmr/m/n/14.4 трей-се-ра,
+ []
+
+[6 <./pics/experiment.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 135.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 131.
- [7 <./pics/direct_simulation.png> <./pics/inverse_problem.png>] [8]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 135.
+<./pics/direct_simulation.png, id=76, 1620.0525pt x 1915.155pt>
+File: ./pics/direct_simulation.png Graphic file (type png)
+<use ./pics/direct_simulation.png>
+Package pdftex.def Info: ./pics/direct_simulation.png  used on input line 145.
+(pdftex.def)             Requested size: 234.73524pt x 277.47119pt.
+<./pics/inverse_problem.png, id=77, 3143.745pt x 3276.24pt>
+File: ./pics/inverse_problem.png Graphic file (type png)
+<use ./pics/inverse_problem.png>
+Package pdftex.def Info: ./pics/inverse_problem.png  used on input line 151.
+(pdftex.def)             Requested size: 234.73524pt x 244.60759pt.
+ [7 <./pics/emus/000.png> <./pics/emus/001.png> <./pics/emus/010.png> <./pics/e
+mus/100.png> <./pics/emus/011.png> <./pics/emus/101.png> <./pics/emus/110.png> 
+<./pics/emus/111.png>]
+[8 <./pics/direct_simulation.png> <./pics/inverse_problem.png>]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
 [9
 
 ] [10
 
-]
-Overfull \hbox (36.69115pt too wide) in paragraph at lines 207--208
-\T2A/cmr/m/n/14.4 нескор-ре-ли-ро-ван-ны, то $[]\OT1/cmr/m/n/14.4 ([][])$ \T2A/
-cmr/m/n/14.4 --- это диа-го-наль-ная мат-ри-ца $\OML/cmm/m/it/14.4 diag\OT1/cmr
-/m/n/14.4 (\OML/cmm/m/it/14.4 ^^[[]; ^^[[]; [] ; ^^[[]\OT1/cmr/m/n/14.4 )$\T2A/
-cmr/m/n/14.4 .
- []
-
-[11
+] [11
 
 ] [12]
-Overfull \hbox (12.74725pt too wide) in paragraph at lines 254--255
+Overfull \hbox (12.74725pt too wide) in paragraph at lines 274--275
 \T2A/cmr/m/n/14.4 Опишем мо-дель EMU, пред-ло-жен-ную Ма-че-ком Ан-то-ни-е-ви-ч
 ем в 2007 году[[]].
  []
@@ -1311,20 +1361,20 @@ Overfull \hbox (12.74725pt too wide) in paragraph at lines 254--255
 {\cyrillictext \CYRP \cyrr \cyri \cyrl \cyro \cyrzh \cyre \cyrn \cyri \cyre } B
 .
 
-Overfull \hbox (13.14693pt too wide) in paragraph at lines 327--327
+Overfull \hbox (13.14693pt too wide) in paragraph at lines 347--347
 |\T2A/cmr/bx/n/35.83 Формальное опре-де-ле-ние ме-
  []
 
 [21
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 []\T2A/cmr/m/n/14.4 Всемирная Ас-со-ци-а-ция Здра-во-охра-не-ния. Cancer [Элек-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 \T2A/cmr/m/n/14.4 трон-ный ре-сурс] URL: https://www.who.int/news-room/fact-
  []
 
@@ -1332,17 +1382,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 344--345
 
 
 ] [23]
-Underfull \hbox (badness 4024) in paragraph at lines 422--423
+Underfull \hbox (badness 4024) in paragraph at lines 442--443
 []\T2A/cmr/m/n/14.4 M^^Dollney M. et al. Bidirectional reaction steps in metabo
 lic
  []
 
 [24] [25] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 28319 strings out of 492609
- 545857 string characters out of 6131462
- 599557 words of memory out of 5000000
- 31807 multiletter control sequences out of 15000+600000
+ 28364 strings out of 492609
+ 546733 string characters out of 6131462
+ 600567 words of memory out of 5000000
+ 31842 multiletter control sequences out of 15000+600000
  557166 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,94p,1494b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1366,10 +1416,10 @@ ic/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/tex
 mf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sfti1440.pfb>
-Output written on main.pdf (25 pages, 1083118 bytes).
+Output written on main.pdf (25 pages, 1098426 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
+ 226 PDF objects out of 1000 (max. 8388607)
  136 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
