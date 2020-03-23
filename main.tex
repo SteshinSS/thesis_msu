@@ -180,13 +180,12 @@
 			1988 & Появление термина <<изотопомер>>\\
 			1997 & W. Weichert, изотопомерная модель\cite{Wiechert_1997_1, Wiechert_1997_2}\\
 			1999 & W. Weichert, кумомерная модель\cite{Wiechert_1999_3, Wiechert_1999_4}\\
+			2007 & W. Weichert, программа 13CFlux\cite{13CFlux1}\\
 			2007 & M. Antoniewicz, EMU модель\cite{EMU_2007}\\
-			2007 & M. Antoniewicz, EMU модель\cite{EMU_2007}\\
-			2007 & M. Antoniewicz, EMU модель\cite{EMU_2007}\\
-			2007 & M. Antoniewicz, EMU модель\cite{EMU_2007}\\
-			2007 & M. Antoniewicz, EMU модель\cite{EMU_2007}\\
-			2007 & M. Antoniewicz, EMU модель\cite{EMU_2007}\\
-			2007 & M. Antoniewicz, EMU модель\cite{EMU_2007}\\
+			2008 & M. Antoniewicz, программа Metran\cite{Metran}\\
+			2009 & L. Quek, программа OpenFlux\cite{OpenFlux}\\
+			2014 & М. Шуплецов, OpenFlux2\cite{OpenFlux2}\\
+			2ххх & Еще какие-то программы\\
 		\end{tabular}
 	\end{table}
 	\columnbreak
@@ -407,14 +406,13 @@ $$ \boldsymbol{v} = ker(\boldsymbol{S}) \cdot \boldsymbol{v}_{free}$$
 
 Пусть $A$ --- молекула. Любое подмножество атомов трейсера молекулы $A$ будем называть \emph{Elementary Metabolic Unit} (далее \emph{EMU}). Например, если $A$ состоит из трех атомов трейсера, обозначим через $A_{13}$ EMU состоящее из первого и третьего атома углерода (см. рис \ref{EMU}). На атомах трейсера одной молекулы задан естественный порядок. \emph{Размером} EMU назовем мощность этого EMU.
 
-Будем рассматривать EMU-реакции. Всего можно выделить три типа реакции: 
+Нас интересует только распределение трейсера, поэтому вместо всех метаболитов сети, будем рассматривать только их EMU. Вместо химических реакций, будем рассматривать EMU-реакции. Можно выделить три типа EMU-реакций (см. таблицу \ref{EMU_reactions}):
 \begin{itemize}
 	\item Конденсации (condensation)
 	\item Расщепления (cleavage)
 	\item Унимолекулярная (unimolecular)
 \end{itemize}
-Для всех реакций достаточно знать MID исходных веществ и тогда MID продукта рассчитывается по формулам с таблицы \ref{EMU_reactions}. 
-
+Любую химическую реакцию можно свести к нескольким EMU-реакциям этих типов. Обратим внимание, что MID продукта EMU-реакции однозначно определяется MID исходных продуктов. С этого момента будем ассоциировать обозначение EMU с его MID.
 \clearpage
 
 \begin{table}
@@ -522,15 +520,102 @@ $$ \boldsymbol{v} = ker(\boldsymbol{S}) \cdot \boldsymbol{v}_{free}$$
 	\label{all_emu_reactions}
 \end{wraptable}
 
-Пусть дана метаболическая сеть с рис. \ref{emu_example}. Требуется найти MID EMU $F_{123}$. Он формируется в EMU-реакции $D_{123} = F_{123}$, поэтому надо узнать MID EMU $D_{123}$. Он задается двумя EMU-реакциями: $B_{123} = D_{123}$ и $B_{23} + C_1 = D_{123}$. Теперь надо определить MID $B_{123}$, $B_{23}$ и $C_1$. С помощью поиска в глубину, найдем список EMU, MID которых надо узнать и заодно составим список EMU-реакций. Список в таблице \ref{all_emu_reactions}.
 
-Для всех EMU-реакций одного размера построим EMU-граф. Это ориентированный граф, вершины которого --- части EMU-уравнений. Заметим, что вершины, не имеющие входящих ребер, либо состоят из EMU меньшего уровня, либо входные EMU, чьи MID известны. 
+Рассмотрим пример. Пусть дана метаболическая сеть с рис. \ref{emu_example}. Требуется найти EMU $F_{123}$. Он формируется в EMU-реакции $D_{123} = F_{123}$, поэтому надо узнать EMU $D_{123}$. Он задается двумя EMU-реакциями: $B_{123} = D_{123}$ и $B_{23} + C_1 = D_{123}$. Теперь надо определить $B_{123}$, $B_{23}$ и $C_1$. Проведя поиск в глубину, найдем список EMU, MID которых надо узнать и заодно составим список EMU-реакций. Реакции нашего примера выписаны в таблице \ref{all_emu_reactions}.
+
+Для всех EMU-реакций одного размера построим EMU-граф. Это ориентированный граф, вершины которого --- части EMU-уравнений. Обратим внимание, что вершины, не имеющие входящих ребер, либо состоят из EMU меньшего уровня, либо входные EMU, чьи MID известны. EMU-графы нашего примера на рис. \ref{emu_graph}.
+
+\begin{figure}[b]
+	\begin{subfigure}{.3\linewidth}
+		\includegraphics[width=\linewidth]{EMU_graph_1.png}
+		\caption{размера 1}
+		\label {emu_graph_1}
+	\end{subfigure}
+	\begin{subfigure}{.3\linewidth}
+		\includegraphics[width=\linewidth]{EMU_graph_2.png}
+		\caption{размера 2}
+		\label {emu_graph_2}
+	\end{subfigure}
+	\begin{subfigure}{.3\linewidth}
+		\includegraphics[width=1.2\linewidth]{EMU_graph_3.png}
+		\caption{размера 3}
+		\label {emu_graph_3}
+	\end{subfigure}
+	\caption{EMU-графы}
+	\label{emu_graph}
+\end{figure}
 
 \clearpage
 
 \subsection{Каскад уравнений}
-Для каждого графа запишем условие стационарности AX = BY. Решаем, получаем ответ. Дополнительно можно посчитать производные.
+Для каждой EMU-реакции запишем закон сохранения массы:
 
+$$\begin{bmatrix}
+-v_4 & v_4 & 0 & 0 & 0\\
+0 & -v_1-v_3 & v_3 & 0 & 0\\
+0 & v_2 & -v_2-v_5 & v_5 & 0\\
+0 & 0 & 0 & -v_1-v_3 & v_3 \\
+v_5 & 0 & 0 & v_2 & -v_2-v_5\\
+\end{bmatrix}
+\begin{bmatrix}
+	C_1\\
+	B_2\\
+	D_2\\
+	B_3\\
+	D_3\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+	0 & 0\\
+	-v_1 & 0\\
+	0 & 0\\
+	0 & -v_1\\
+	0 & 0\\
+\end{bmatrix}
+\begin{bmatrix}
+	A_2\\
+	A_3\\
+\end{bmatrix}$$
+
+$$\begin{bmatrix}
+-v_5-v_2 & v_2\\
+v_3 & -v_1-v_3\\
+\end{bmatrix}
+\begin{bmatrix}
+D_{23}\\
+B_{23}
+\end{bmatrix}
+=
+\begin{bmatrix}
+-v_5 & 0\\
+0 & -v_1\\
+\end{bmatrix}
+\begin{bmatrix}
+B_3 \times C_1\\
+A_{23}
+\end{bmatrix}$$
+
+$$\begin{bmatrix}
+-v_6 & v_6 & 0\\
+0 & -v_5-v_2 & v_2\\
+0 & v_3 & -v_1-v_3\\
+\end{bmatrix}
+\begin{bmatrix}
+F_{123}\\
+D_{123}\\
+B_{123}\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+0 & 0\\
+-v_5 & 0\\
+0 & -v_1\\
+\end{bmatrix}
+\begin{bmatrix}
+B_{23} \times C_1\\
+A_{123}\\
+\end{bmatrix}
+$$
 \subsection{Улучшения}
 Разбиение на компоненты связности.
 
@@ -573,7 +658,7 @@ $$ \boldsymbol{v} = ker(\boldsymbol{S}) \cdot \boldsymbol{v}_{free}$$
 	\begin{itemize}
 		\item \textbf{13CFLUX2} --- Самая известная программа для \ce{^{13}C}-MFA. Имеет закрытый исходный код и платна для коммерческого использования. Для научных целей можно получить академическую лицензию, написав письмо в Германию\cite{13CFLUX2}.
 		
-		\item \textbf{Metran} --- Написана автором EMU-модели. Чтобы получить программу под академической лицензией надо написать письмо в MIT.
+		\item \textbf{Metran} --- Написана автором EMU-модели. Чтобы получить программу под академической лицензией надо написать письмо в MIT\cite{Metran}.
 		
 		\item \textbf{OpenFlux(2)} --- Пакет для Matlab\cite{OpenFlux, OpenFlux2}.
 		
@@ -679,6 +764,9 @@ $$ \boldsymbol{v} = ker(\boldsymbol{S}) \cdot \boldsymbol{v}_{free}$$
 	\bibitem{Wiechert_1999_4}
 	Möllney M. et al. Bidirectional reaction steps in metabolic networks: IV. Optimal design of isotopomer labeling experiments // Biotechnology and bioengineering. --- 1999. --- Т. 66. --- №. 2. --- С. 86---103.
 	
+	\bibitem{13CFlux1}
+	Wiechert W. et al. A universal framework for 13C metabolic flux analysis // Metabolic engineering. --- 2001. --- Т. 3. --- №. 3. --- С. 265-283.
+	
 	\bibitem{Direct_MFA}
 	Rantanen A. et al. Algorithms for 13C metabolic flux analysis. --- 2006.
 	
@@ -690,6 +778,9 @@ $$ \boldsymbol{v} = ker(\boldsymbol{S}) \cdot \boldsymbol{v}_{free}$$
 		
 	\bibitem{13CFLUX2}
 	Weitzel M. et al. 13CFLUX2—high-performance software suite for 13C-metabolic flux analysis // Bioinformatics. --- 2013. --- Т. 29. --- №. 1. --- С. 143--145.
+	
+	\bibitem{Metran}
+	Yoo H. et al. Quantifying reductive carboxylation flux of glutamine to lipid in a brown adipocyte cell line // Journal of Biological Chemistry. --- 2008 --- Т. 283. --- №. 30. --- С. 20621-20627.
 	
 	\bibitem{OpenFlux}
 	Quek L. E. et al. OpenFLUX: efficient modelling software for 13 C-based metabolic flux analysis // Microbial cell factories. --- 2009. --- Т. 8. --- №. 1. --- С. 25.
