@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  23 MAR 2020 22:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  24 MAR 2020 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1470,16 +1470,6 @@ Underfull \hbox (badness 1009) in paragraph at lines 519--519
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 524--525
-\OML/cmm/m/it/14.4 F[]$\T2A/cmr/m/n/14.4 , по-это-му на-до узнать EMU
- []
-
-
-Underfull \hbox (badness 3058) in paragraph at lines 524--525
-\OML/cmm/m/it/14.4 D[]$\T2A/cmr/m/n/14.4 . ќн за-да-ет-с€ дву-м€ EMU-
- []
-
-
 Underfull \hbox (badness 2103) in paragraph at lines 526--527
 \T2A/cmr/m/n/14.4 ори-ен-ти-ро-ван-ный граф, вер-ши-ны
  []
@@ -1507,8 +1497,13 @@ Overfull \hbox (28.16808pt too wide) in paragraph at lines 540--541
 [16
 
 
- <./pics/EMU_graph_1.png> <./pics/EMU_graph_2.png> <./pics/EMU_graph_3.png>] [1
-7
+ <./pics/EMU_graph_1.png> <./pics/EMU_graph_2.png> <./pics/EMU_graph_3.png>]
+Overfull \hbox (3.24783pt too wide) in paragraph at lines 555--563
+[]$\OML/cmm/m/it/14.4 A$ \T2A/cmr/m/n/14.4 --- мат-ри-ца по-то-ков та-ка€, что 
+$\OML/cmm/m/it/14.4 a[] \OT1/cmr/m/n/14.4 = []$
+ []
+
+[17
 
 ] [18
 
@@ -1532,7 +1527,7 @@ Overfull \hbox (28.16808pt too wide) in paragraph at lines 540--541
 {\cyrillictext \CYRP \cyrr \cyri \cyrl \cyro \cyrzh \cyre \cyrn \cyri \cyre } A
 .
 
-Overfull \hbox (3.62238pt too wide) in paragraph at lines 661--662
+Overfull \hbox (3.62238pt too wide) in paragraph at lines 679--680
 \T2A/cmr/m/n/14.4 грам-му под ака-де-ми-че-ской ли-цен-зи-ей на-до на-пи-сать п
 ись-мо в MIT[[]]. 
  []
@@ -1544,7 +1539,7 @@ Overfull \hbox (3.62238pt too wide) in paragraph at lines 661--662
 {\cyrillictext \CYRP \cyrr \cyri \cyrl \cyro \cyrzh \cyre \cyrn \cyri \cyre } B
 .
 
-Overfull \hbox (1.4635pt too wide) in paragraph at lines 675--676
+Overfull \hbox (1.4635pt too wide) in paragraph at lines 693--694
 []\T2A/cmr/m/n/14.4 «адана пе-ре-ста-нов-ка $\OML/cmm/m/it/14.4 S[]$ \T2A/cmr/m
 /n/14.4 с мощ-но-стью, рав-ной ко-ли-че-ству ато-мов трей-
  []
@@ -1552,13 +1547,13 @@ Overfull \hbox (1.4635pt too wide) in paragraph at lines 675--676
 [24
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 687--688
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
 []\T2A/cmr/m/n/14.4 ¬семирна€ јс-со-ци-а-ци€ «дра-во-охра-не-ни€. Cancer [Ёлек-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--688
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
 \T2A/cmr/m/n/14.4 трон-ный ре-сурс] URL: https://www.who.int/news-room/fact-
  []
 
@@ -1566,7 +1561,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 687--688
 
 
 ] [26]
-Underfull \hbox (badness 4024) in paragraph at lines 765--766
+Underfull \hbox (badness 4024) in paragraph at lines 783--784
 []\T2A/cmr/m/n/14.4 M^^Dollney M. et al. Bidirectional reaction steps in metabo
 lic
  []
@@ -1579,7 +1574,7 @@ Here is how much of TeX's memory you used:
  32136 multiletter control sequences out of 15000+600000
  561852 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,18n,94p,1494b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,18n,94p,1494b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a
 .enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/s
@@ -1601,7 +1596,7 @@ ic/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000
 mf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.
 pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on main.pdf (28 pages, 2177529 bytes).
+Output written on main.pdf (28 pages, 2179679 bytes).
 PDF statistics:
  263 PDF objects out of 1000 (max. 8388607)
  148 compressed objects within 2 object streams
