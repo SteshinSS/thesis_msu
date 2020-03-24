@@ -643,7 +643,7 @@ $$
 \clearpage
 \section{Статистический анализ}
 \subsection{Статистическая значимость}
-Результаты решения регрессии надо проверить на статистическую\\ значимость\cite{shupltesov_review_2}. Будем считать, что каждый член суммы формулы (1.1) является случайной величиной $\sim \mathcal{N}(0, 1)$. Гипотеза $H_0$ заключается в том, что сумма квадратов разностей $\xi_{SSR}$ (1.1), являясь суммой случайных величин, удовлетворяет распределению $\chi^2$. Число степеней свободы этого распределения равно числу независимых измерений $W$ минус число оцениваемых параметров (то есть число свободных потоков) $p$. $H_1$ --- значит, что $\xi_{SSR}$ имеет другое распределение. Таким образом, критерий значимости:
+Один из способов исследования статистической значимости решения задачи регрессии основан на применении $\chi^2$-статистики\cite{shupltesov_review_2}. Будем считать, что каждый член суммы формулы (1.1) является случайной величиной $\sim \mathcal{N}(0, 1)$. Гипотеза $H_0$ заключается в том, что сумма квадратов разностей $\xi_{SSR}$ (1.1), являясь суммой случайных величин, удовлетворяет распределению $\chi^2$. Число степеней свободы этого распределения равно числу независимых измерений $W$ минус число оцениваемых параметров (то есть число свободных потоков) $p$. $H_1$ --- значит, что $\xi_{SSR}$ имеет другое распределение. Таким образом, критерий значимости:
 $$
 \sigma(\xi_{SSR}) = \begin{cases}
 	H_0,&\text{если $\chi^2_{\alpha / 2}(W - p) \le \xi_{SSR} \le \chi^2_{1 - \alpha}(W - p)$}\\
@@ -651,6 +651,25 @@ $$
 	H_1,&\text{если $\xi_{SSR} \geq \chi^2_{1 - \alpha}(W - p)$}\\
 \end{cases}$$
 \subsection{Доверительные интервалы}
+Задачу нахождения доверительных интервалов можно решать разными способами. Один из них основан на подходе Монте-Карло. Для нахождения доверительных интервалов в исходные данные искусственно вносят ошибки, имеющие нормальное распределение, и решают задачу регрессии для новых ошибочных данных. После получения облака решений, в \cite{OpenFlux2} рекомендуется использовать метод отбрасывания максимальных и минимальных оценок. Это значит, что для 95\%-го доверительного интервала отбрасываются 2.5\% самых меньших и 2.5\% самых больших оценок.
+
+Используя разные техники построение доверительных интервалов, можно получить разные оценки. Это продемонстрировано в работе \cite{bayesian}, авторы которой предлагают подход, основанный на байесианской статистике, с использованием Монте-Карло Марковских цепей.
+
+Вопросы статистического анализа также поднимались в следующих статьях: \cite{Wiechert_1999_3, Wiechert_1999_4, ci_antoniewicz, bayesian, bayesian_2, bayesian_3}
+
+\clearpage
+\section{Дополнительные соображения}
+Формат этой работы не позволяет описать все технические особенности метода. Здесь собраны некоторые вопросы, которые надо решить для написания собственной программы, но которые опущены ради лаконичности.
+\begin{itemize}
+	\item До масс-спектрометрии для MFA использовался ядерно-магнитный резонанс(ЯМР). Как составить EMU-модель для ЯМР-данных?\cite{EMU_2007}
+	\item Какой метод оптимизации использовать?\cite{adjoint_approach, protocol, optimization_in_mfa} \cite[препринт]{2019_gradient}
+	\item Градиентные методы оптимизации требуют производную целевой функции (1.1). Как ее составить и, в частности, как найти аналитическую производную EMU-модели? \cite{EMU_2007, protocol}
+	\item Большая часть вычислений --- это решение каскада СЛАУ $\mathbf{AX} = \mathbf{BY}$. Как его решать?
+	\item Матрицы каскада, как и EMU-графы получаются разреженными. Как используя структуру графа, построить графовые декомпозиции для оптимизации вычислений? \cite{topology, emu_topology}
+	\item Тяжелые изотопы встречаются в клетке до \ce{{}^13C}-эксперимента. Как это учесть?
+	\item Как выбрать входной субстрат, чтобы увеличить точность вычисление потоков, снизив стоимость расходных материалов? \cite{planning_optimal, planning_optimal_2, planning_optimal_3, planning_optimal_4} 
+	\item MID каких метаболитов замерять в эксперименте, чтобы увеличить точность вычисления потоков? \cite{optimal_measurements}
+\end{itemize}
 
 \chapter[Постановка задачи]{\thechapter{}. Постановка задачи}
 \begin{itemize}
@@ -693,11 +712,11 @@ $$
 	
 	
 	\chapter{Формальное определение \\метаболической сети}
-	Пусть $V$ -- конечное множество \emph{метаболитов}. Для каждого метаболита известно \emph{число атомов трейсера} в нем: $\mathbb{C} \colon V \to \mathbb{N}_0$. 
+	Пусть $V$ -- конечное множество \emph{метаболитов}. Для каждого метаболита известно \emph{число атомов трейсера} в нем: $\sigma \colon V \to \mathbb{N}_0$. 
 	
 	Пусть $U, W \subset V$ --- конечные мультимножества метаболитов. \emph{Химической реакцией} назовем упорядоченную пару $e = (U, W)$, элементы которой назовем \emph{субстратом} и \emph{продуктом} соответственно, если:
 	\begin{itemize}
-		\item Количество атомов трейсера одинаково в субстрате и продукте: \\ $n = \sum_{u \in U} \mathbb{C}(u) = \sum_{w \in W} \mathbb{C}(w_j)$. 
+		\item Количество атомов трейсера одинаково в субстрате и продукте: \\ $n = \sum_{u \in U} \sigma(u) = \sum_{w \in W} \sigma(w)$. 
 		\item Задана перестановка $S_e$ с мощностью, равной количеству атомов трейсера в субстрате и продукте $|S_e| = n$.
 	\end{itemize}
 	
@@ -776,7 +795,7 @@ $$
 	Plant metabolic flux analysis: methods and protocols. // Под ред. Dieuaide-Noubhani M., Alonso A.P. --- 1 изд. Humana Press, 2014. --- 366 с.
 	
 	\bibitem{first_MFA}
-	Blumstein S. E., Isaacs E., Mertus J. The role of the gross spectral shape as a perceptual cue to place of articulation in initial stop consonants // The Journal of the Acoustical Society of America. – 1982. – Т. 72. – №. 1. – С. 43-50.
+	Blumstein S. E., Isaacs E., Mertus J. The role of the gross spectral shape as a perceptual cue to place of articulation in initial stop consonants // The Journal of the Acoustical Society of America. --- 1982. --- Т. 72. --- №. 1. --- С. 43-50.
 	
 	\bibitem{Wiechert_1997_1}
 	Wiechert W., de Graaf A. A. Bidirectional reaction steps in metabolic networks: I. Modeling and simulation of carbon isotope labeling experiments // Biotechnology and bioengineering. --- 1997. --- Т. 55. --- №. 1. --- С. 101--117.
@@ -797,7 +816,7 @@ $$
 	Rantanen A. et al. Algorithms for 13C metabolic flux analysis. --- 2006.
 	
 	\bibitem{Markov_chain_MFA}
-	Huo Y., Ji P. Continuous-Time Markov Chain–Based Flux Analysis in Metabolism // Journal of Computational Biology. --- 2014. --- Т. 21. --- №. 9. --- С. 691-698.
+	Huo Y., Ji P. Continuous-Time Markov Chain-Based Flux Analysis in Metabolism // Journal of Computational Biology. --- 2014. --- Т. 21. --- №. 9. --- С. 691-698.
 	
 	\bibitem{Fluxomer_MFA}
 	Srour O., Young J. D., Eldar Y. C. Fluxomers: a new approach for 13 C metabolic flux analysis // BMC systems biology. --- 2011. --- Т. 5. --- №. 1. --- С. 129.
@@ -834,6 +853,48 @@ $$
 	
 	\bibitem{anderson_1983}
 	Anderson M. J., Fambrough D. M. Aggregates of acetylcholine receptors are associated with plaques of a basal lamina heparan sulfate proteoglycan on the surface of skeletal muscle fibers // The Journal of cell biology. --- 1983. --- Т. 97. --- №. 5. --- С. 1396-1411.
+	
+	\bibitem{bayesian}
+	Theorell A. et al. To be certain about the uncertainty: Bayesian statistics for 13C metabolic flux analysis // Biotechnology and bioengineering. --- 2017. --- Т. 114. --- №. 11. --- С. 2668-2684.
+	
+	\bibitem{ci_antoniewicz}
+	Antoniewicz M. R., Kelleher J. K., Stephanopoulos G. Determination of confidence intervals of metabolic fluxes estimated from stable isotope measurements // Metabolic engineering. --- 2006. --- Т. 8. --- №. 4. --- С. 324-337.
+	
+	\bibitem{bayesian_2}
+	Theorell A., Nöh K. Model Uncertainty Analysis for Metabolic Network Inference: A Case Study in Bayesian Model Averaging // IFAC-PapersOnLine. --- 2018. --- Т. 51. --- №. 19. --- С. 124-125.
+	
+	\bibitem{bayesian_3}
+	Heinonen M. et al. Bayesian metabolic flux analysis reveals intracellular flux couplings // Bioinformatics. --- 2019. --- Т. 35. --- №. 14. --- С. i548-i557.
+	
+	\bibitem{2019_gradient}
+	Mottelet S. Fast computation of gradient and sentitivity in 13C metabolic flux analysis instationary experiments using the adjoint method // arXiv preprint arXiv:1206.5072. --- 2012.
+	
+	\bibitem{adjoint_approach}
+	Mottelet S., Gaullier G., Sadaka G. Metabolic flux analysis in isotope labeling experiments using the adjoint approach // IEEE/ACM transactions on computational biology and bioinformatics. --- 2016. --- Т. 14. --- №. 2. --- С. 491-497.
+	
+	\bibitem{optimization_in_mfa}
+	Maranas C. D., Zomorrodi A. R. Optimization methods in metabolic networks. --- John Wiley \& Sons, 2016.
+	
+	\bibitem{topology}
+	Weitzel M., Wiechert W., Nöh K. The topology of metabolic isotope labeling networks // BMC bioinformatics. --- 2007. --- Т. 8. --- №. 1. --- С. 315.
+	
+	\bibitem{emu_topology}
+	Young J. D. et al. An elementary metabolite unit (EMU) based method of isotopically nonstationary flux analysis // Biotechnology and bioengineering. --- 2008. --- Т. 99. --- №. 3. --- С. 686-699.
+	
+	\bibitem{planning_optimal}
+	Rantanen A. et al. Planning optimal measurements of isotopomer distributions for estimation of metabolic fluxes // Bioinformatics. --- 2006. --- Т. 22. --- №. 10. --- С. 1198-1206.
+	
+	\bibitem{planning_optimal_2}
+	Antoniewicz M. R. 13C metabolic flux analysis: optimal design of isotopic labeling experiments // Current opinion in biotechnology. --- 2013. --- Т. 24. --- №. 6. --- С. 1116-1121.
+	
+	\bibitem{planning_optimal_3}
+	Crown S. B., Long C. P., Antoniewicz M. R. Optimal tracers for parallel labeling experiments and 13C metabolic flux analysis: a new precision and synergy scoring system //Metabolic engineering. --- 2016. --- Т. 38. --- С. 10-18.
+	
+	\bibitem{planning_optimal_4}
+	Crown S. B., Long C. P., Antoniewicz M. R. Integrated 13C-metabolic flux analysis of 14 parallel labeling experiments in Escherichia coli //Metabolic engineering. --- 2015. --- Т. 28. --- С. 151-158.
+	
+	\bibitem{optimal_measurements}
+	Chang Y. J., Suthers P. F., Maranas C. D. Identification of optimal measurement sets for complete flux elucidation in metabolic flux analysis experiments // Biotechnology and bioengineering. --- 2008. --- Т. 100. --- №. 6. --- С. 1039-1049.
 	
 	
 \end{thebibliography}
