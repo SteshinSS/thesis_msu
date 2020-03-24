@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  24 MAR 2020 17:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  24 MAR 2020 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1494,8 +1494,8 @@ Overfull \hbox (28.16808pt too wide) in paragraph at lines 544--545
 [16
 
  <./pics/EMU_graph_1.png> <./pics/EMU_graph_2.png> <./pics/EMU_graph_3.png>]
-Overfull \hbox (39.18886pt too wide) in paragraph at lines 559--568
-$\OML/cmm/m/it/14.4 A\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 v\OT1/cmr/m/n/14.4 )
+Overfull \hbox (42.29404pt too wide) in paragraph at lines 559--568
+$\OT1/cmr/bx/n/14.4 A\OT1/cmr/m/n/14.4 (\OT1/cmr/bx/n/14.4 v\OT1/cmr/m/n/14.4 )
 $ \T2A/cmr/m/n/14.4 --- мат-ри-ца по-то-ков та-кая, что $\OML/cmm/m/it/14.4 a[]
  \OT1/cmr/m/n/14.4 = []$
  []
@@ -1524,7 +1524,7 @@ $ \T2A/cmr/m/n/14.4 --- мат-ри-ца по-то-ков та-кая, что $\OML/cmm/m/it/14.4 a[]
 {\cyrillictext \CYRP \cyrr \cyri \cyrl \cyro \cyrzh \cyre \cyrn \cyri \cyre } A
 .
 
-Overfull \hbox (3.62238pt too wide) in paragraph at lines 686--687
+Overfull \hbox (3.62238pt too wide) in paragraph at lines 687--688
 \T2A/cmr/m/n/14.4 грам-му под ака-де-ми-че-ской ли-цен-зи-ей на-до на-пи-сать п
 ись-мо в MIT[[]]. 
  []
@@ -1536,7 +1536,7 @@ Overfull \hbox (3.62238pt too wide) in paragraph at lines 686--687
 {\cyrillictext \CYRP \cyrr \cyri \cyrl \cyro \cyrzh \cyre \cyrn \cyri \cyre } B
 .
 
-Overfull \hbox (1.4635pt too wide) in paragraph at lines 700--701
+Overfull \hbox (1.4635pt too wide) in paragraph at lines 701--702
 []\T2A/cmr/m/n/14.4 Задана пе-ре-ста-нов-ка $\OML/cmm/m/it/14.4 S[]$ \T2A/cmr/m
 /n/14.4 с мощ-но-стью, рав-ной ко-ли-че-ству ато-мов трей-
  []
@@ -1544,13 +1544,13 @@ Overfull \hbox (1.4635pt too wide) in paragraph at lines 700--701
 [24
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 712--713
+Underfull \hbox (badness 10000) in paragraph at lines 713--714
 []\T2A/cmr/m/n/14.4 Всемирная Ас-со-ци-а-ция Здра-во-охра-не-ния. Cancer [Элек-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 712--713
+Underfull \hbox (badness 10000) in paragraph at lines 713--714
 \T2A/cmr/m/n/14.4 трон-ный ре-сурс] URL: https://www.who.int/news-room/fact-
  []
 
@@ -1558,42 +1558,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 712--713
 
 
 ] [26]
-Underfull \hbox (badness 4024) in paragraph at lines 790--791
+Underfull \hbox (badness 4024) in paragraph at lines 791--792
 []\T2A/cmr/m/n/14.4 M^^Dollney M. et al. Bidirectional reaction steps in metabo
 lic
  []
 
 [27] [28] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 28694 strings out of 492609
- 552175 string characters out of 6131462
+ 28685 strings out of 492609
+ 552070 string characters out of 6131462
  613749 words of memory out of 5000000
- 32142 multiletter control sequences out of 15000+600000
- 561852 words of font info for 94 fonts, out of 8000000 for 9000
+ 32137 multiletter control sequences out of 15000+600000
+ 560337 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,94p,1494b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a
-.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx06
-00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx207
-4.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx3583.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on main.pdf (28 pages, 2187527 bytes).
+.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx060
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx3583.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texm
+f/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public
+/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.p
+fb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.pfb>
+Output written on main.pdf (28 pages, 2188596 bytes).
 PDF statistics:
  264 PDF objects out of 1000 (max. 8388607)
  148 compressed objects within 2 object streams
