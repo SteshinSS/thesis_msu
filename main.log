@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  26 APR 2020 21:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.14)  29 APR 2020 21:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1566,10 +1566,16 @@ LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 713
 .
 (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-) [23
+)
+Overfull \hbox (9.50424pt too wide) in paragraph at lines 716--717
+\T2A/cmr/m/n/14.4 та-бо-ли-че-ских мо-де-лях. Ре-зуль-тат вы-чис-ле-ний сов-пал
+ с ре-зуль-та-та-ми FluxPyt
+ []
+
+[23
 
 ]
-Overfull \hbox (1.88329pt too wide) in paragraph at lines 725--726
+Overfull \hbox (1.88329pt too wide) in paragraph at lines 722--723
 \T2A/cmr/m/n/14.4 мат-ри-цу ко-эф-фи-ци-ен-тов $\OT1/cmr/bx/n/14.4 A\OT1/cmr/m/
 n/14.4 (\OT1/cmr/bx/n/14.4 v\OT1/cmr/m/n/14.4 )$ \T2A/cmr/m/n/14.4 со зна-ком м
 и-нус, все-гда по-лу-чим М-матрицу.
@@ -1582,9 +1588,9 @@ n/14.4 (\OT1/cmr/bx/n/14.4 v\OT1/cmr/m/n/14.4 )$ \T2A/cmr/m/n/14.4 со зна-ком м
 ]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 5.
 
-Overfull \hbox (4.19954pt too wide) in paragraph at lines 783--784
-\T2A/cmr/m/n/14.4 чис-лен-ные ме-то-ды с ILU-предобуславливателем ра-бо-та-ют б
-ыст-рее все-
+Overfull \hbox (4.96968pt too wide) in paragraph at lines 780--781
+\T2A/cmr/m/n/14.4 мо-де-ли. По-ка-за-но, что чис-лен-ные ме-то-ды с ILU-предобу
+славливателем
  []
 
 [26
@@ -1597,34 +1603,34 @@ Overfull \hbox (4.19954pt too wide) in paragraph at lines 783--784
 {\cyrillictext \CYRP \cyrr \cyri \cyrl \cyro \cyrzh \cyre \cyrn \cyri \cyre } A
 .
 
-Overfull \hbox (25.37129pt too wide) in paragraph at lines 806--807
+Overfull \hbox (25.37129pt too wide) in paragraph at lines 803--804
 []\T2A/cmr/bx/n/14.4 Sysmetab \T2A/cmr/m/n/14.4 --- Ав-тор пред-ло-жил ис-поль-
 зо-вать ме-тод оп-ти-ми-за-ции "Adjoint
  []
 
 
-Overfull \hbox (43.3053pt too wide) in paragraph at lines 808--809
+Overfull \hbox (43.3053pt too wide) in paragraph at lines 805--806
 []\T2A/cmr/bx/n/14.4 baMFA \T2A/cmr/m/n/14.4 --- Па-кет для Matlab с ис-поль-зо
 -ва-ни-ем Бай-е-си-ан-ской статистики[[]]. 
  []
 
 
-Overfull \hbox (31.64212pt too wide) in paragraph at lines 816--817
+Overfull \hbox (36.20883pt too wide) in paragraph at lines 813--814
 []\T2A/cmr/bx/n/14.4 OpenMebius \T2A/cmr/m/n/14.4 --- Па-кет для INST-$[][][][]
-$MFA рас-че-тов. На-пи-сан на Matlab[[]]. 
+$-MFA рас-че-тов. На-пи-сан на Matlab[[]]. 
  []
 
 [28
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 829--830
+Underfull \hbox (badness 10000) in paragraph at lines 826--827
 []\T2A/cmr/m/n/14.4 Всемирная Ас-со-ци-а-ция Здра-во-охра-не-ния. Cancer [Элек-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 829--830
+Underfull \hbox (badness 10000) in paragraph at lines 826--827
 \T2A/cmr/m/n/14.4 трон-ный ре-сурс] URL: https://www.who.int/news-room/fact-
  []
 
@@ -1632,46 +1638,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 829--830
 
 
 ] [30]
-Underfull \hbox (badness 4024) in paragraph at lines 910--911
+Underfull \hbox (badness 4024) in paragraph at lines 907--908
 []\T2A/cmr/m/n/14.4 M^^Dollney M. et al. Bidirectional reaction steps in metabo
 lic
  []
 
 [31] [32]
-Underfull \hbox (badness 3179) in paragraph at lines 966--967
+Underfull \hbox (badness 3179) in paragraph at lines 963--964
 []\T2A/cmr/m/n/14.4 Heinonen M. et al. Bayesian metabolic flux analysis reveals
 
  []
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 999--1000
+Underfull \hbox (badness 10000) in paragraph at lines 996--997
 []\T2A/cmr/m/n/14.4 Ostrowski A. []Uber die Determinanten mit ^^Duberwiegender
  []
 
 
-Underfull \hbox (badness 5711) in paragraph at lines 1002--1003
+Underfull \hbox (badness 5711) in paragraph at lines 999--1000
 []\T2A/cmr/m/n/14.4 Berman A., Plemmons R. J. Nonnegative matrices in the
  []
 
 
-Underfull \hbox (badness 3460) in paragraph at lines 1002--1003
+Underfull \hbox (badness 3460) in paragraph at lines 999--1000
 \T2A/cmr/m/n/14.4 mathematical sciences. --- Society for Industrial and Applied
 
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 1005--1006
+Underfull \hbox (badness 1102) in paragraph at lines 1002--1003
 []\T2A/cmr/m/n/14.4 Edwards M. G. M-matrix flux splitting for general full tens
 or
  []
 
 
-Underfull \hbox (badness 2277) in paragraph at lines 1014--1015
+Underfull \hbox (badness 2277) in paragraph at lines 1011--1012
 \T2A/cmr/m/n/14.4 Dynamics Models via Symmetric Successive Overrelaxation //
  []
 
 
-Underfull \hbox (badness 3396) in paragraph at lines 1026--1027
+Underfull \hbox (badness 3396) in paragraph at lines 1023--1024
 []\T2A/cmr/m/n/14.4 Stone H. L. Iterative solution of implicit approximations o
 f
  []
@@ -1707,7 +1713,7 @@ f/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public
 /cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.p
 fb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.pfb></usr/share/texmf
 /fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on main.pdf (35 pages, 3617707 bytes).
+Output written on main.pdf (35 pages, 3618085 bytes).
 PDF statistics:
  292 PDF objects out of 1000 (max. 8388607)
  166 compressed objects within 2 object streams
