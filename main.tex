@@ -752,7 +752,7 @@ $
 \subsection{Замеры}
 Возьмем матрицу $\mathbf{A}$ размером 253х253 из настоящей метаболической модели и сравним численные методы. 
 \begin{itemize}
-	\item BiCGSTAB + IUL --- Стабилизированный метод бисопряженных\\градиентов\cite{BiCGSTAB} с использованием IUL-разложения в качестве предобуславливателя
+	\item BiCGSTAB + ILU --- Стабилизированный метод бисопряженных\\градиентов\cite{BiCGSTAB} с использованием ILU-разложения в качестве предобуславливателя
 	\item BiCGSTAB + Diag --- Стабилизированный метод бисопряженных градиентов с использованием диагонали матрицы $\mathbf{A}$ в качестве предобуславливателя
 	\item DenseLU --- Стандартный метод решения СЛАУ с использованием LU-разложения с перестановками строк (Partial Pivoting)
 	\item SuperLU --- Специальный метод с использованием LU-разложения, оптимизированного для разреженных матриц\cite{SuperLU} с применением эвристического предобуславливателя COLAMD (Column Approximate Minimum Degree)\cite{COLAMD}
@@ -764,7 +764,7 @@ $
 	\caption{Сравнение методов. Время в микросекундах\label{methods_benchmark}}
 	\begin{tabular}{c|c|c|c}
 		\hline
-		BiCGSTAB + IUL & BiCGSTAB + Diag & DenseLU & SparseLU\\
+		BiCGSTAB + ILU & BiCGSTAB + Diag & DenseLU & SparseLU\\
 		\hline
 		125 & 986 & 645 & 174\\
 	\end{tabular}
