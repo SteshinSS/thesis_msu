@@ -120,38 +120,39 @@ Khnum, шестнадцать потоков --- 4 секунды
 \end{frame}
 
 \section{М-матрицы}
-\begin{frame}{Определение М-матриц}
-\begin{theorem}[Ostrowsky, 1937]
+\begin{frame}{М-матрицы}
+\begin{block}{Определение М-матрицы (Ostrowsky, 1937)}
 	Квадратная матрица $\mathbf{A} \in \mathbb{R}^{n \times n}$ называется \emph{М-матрицей}, если:
 	\begin{enumerate}
 		\item Ее диагональные элементы больше или равны нулю $a_{ii} \ge 0$, $i = j$
 		\item Ее внедиагональные элементы меньше или равны нулю $a_{ij} \le 0$, $i \neq j$
 		\item Матрицу $\mathbf{A}$ можно представить в виде: $\mathbf{A} = s\mathbf{I} - \mathbf{B}$, где $s > 0$, $\mathbf{B} \ge 0$, $s > \rho(\mathbf{B})$, где $\rho(\mathbf{B})$ --- спектральный радиус $\mathbf{B}$
 	\end{enumerate}
-\end{theorem}
+\end{block}
+
 \end{frame}
 
-\begin{frame}{Критерий М-матрицы}
-\begin{theorem}[Fiedler, Ptak, 1962]
+\begin{frame}{М-матрицы}
+\begin{block}{Критерий М-матриц (Fiedler, Ptak, 1962)}
 	Квадратная матрица является М-матрицей тогда и только тогда, когда она невырожденная и все вещественные собственные значения ее главных миноров больше или равны нулю. 
-\end{theorem}
+\end{block}
 \end{frame}
 
-\begin{frame}{Теорема кругов Гершгорина}
-\begin{theorem}[Гершгорин, 1931]
+\begin{frame}{М-матрицы}
+\begin{block}{Теорема кругов (Гершгорин, 1931)}
 	Пусть $\mathbf{A} \in \mathbb{C}^{n \times n}$ --- комплексная матрица. Пусть $R_i = \sum_{i \neq j} |a_{ij}|$ --- сумма модулей внедиагональных элементов $i$ строки. Кругом Гершгорина назовем замкнутый круг $D(a_{ii}, R_i)$ с центром в $a_{ii}$ и радиусом $R_i$. Тогда каждое собственное значение матрицы $\mathbf{A}$ лежит хотя бы в одном круге Гершгорина. 
-\end{theorem}
+\end{block}
 \end{frame}
 
-\begin{frame}{Результат}
-\begin{theorem}
+\begin{frame}{М-матрицы}
+\begin{block}{Теорема-результат}
 	Матрица коэффициентов MFA-систем, взятая со знаком минус, является М-матрицей.
-\end{theorem}
+\end{block}
 \end{frame}
 
 \section{ILU-разложение}
 \begin{frame}{ILU-разложение}
-\begin{theorem}[Meijerink, van der Vorst, 1977]
+\begin{block}{Определение ILU-разложения (Meijerink, van der Vorst, 1977)}
 	Пусть $\mathbf{A} \in \mathbb{R}^{n \times n}$ --- разреженная матрица. Определим для нее \emph{разреженную структуру} $S = \{(i, j) | a_{ij} \neq 0\} \cup \{(i,i)\}$ состоящую из всех координат ненулевых элементов и всех диагональных координат. Назовем \emph{ILU-разложением} разложение вида $\mathbf{A} = \mathbf{L}\mathbf{U} - \mathbf{R}$, где
 	\begin{itemize}
 		\item $\mathbf{L} \in \mathbb{R}^{n \times n}$ --- нижнетреугольная матрица
@@ -159,7 +160,7 @@ Khnum, шестнадцать потоков --- 4 секунды
 		\item $\mathbf{L}, \mathbf{U}$ равны нулю вне разреженной структуры: $\mathbf{L}_{ij} = \mathbf{U}_{ij} = 0 \forall (i, j) \notin S$
 		\item $\mathbf{R} \in \mathbb{R}^{n \times n}$ равна нулю в разреженной структуре: $\mathbf{R}_{ij} = 0 \forall (i, j) \in S$
 	\end{itemize}
-\end{theorem}
+\end{block}
 \end{frame}
 
 \begin{frame}{Замеры}
@@ -182,14 +183,15 @@ Khnum, шестнадцать потоков --- 4 секунды
 \end{table}
 \end{frame}
 
+\section{Модель Леонтьева}
 \begin{frame}{Продуктивная матрица}
-\begin{theorem}[Леонтьев, 1928]
+\begin{block}{Определение продуктивной матрицы (Леонтьев, 1928)}
 	Квадратная вещественная матрица $\mathbf{A} \in \mathbb{R}^{n \times n}$ называется продуктивной, если
 	\begin{itemize}
 		\item $a_{ij} \leq 0, \forall i \neq j$
 		\item $\exists x \geq 0 : Ax > 0$
 	\end{itemize}
-\end{theorem}
+\end{block}
 \end{frame}
 
 \begin{frame}{Сравнение моделей}

@@ -4,4 +4,5 @@
 \beamer@sectionintoc {3}{Khnum}{18}{0}{3}
 \beamer@sectionintoc {4}{\IeC {\CYRM }-\IeC {\cyrm }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrc }\IeC {\cyrery }}{20}{0}{4}
 \beamer@sectionintoc {5}{ILU-\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrl }\IeC {\cyro }\IeC {\cyrzh }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{24}{0}{5}
-\beamer@sectionintoc {6}{\IeC {\CYRP }\IeC {\cyro }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyre } \IeC {\cyrr }\IeC {\cyre }\IeC {\cyrz }\IeC {\cyru }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyrery }}{28}{0}{6}
+\beamer@sectionintoc {6}{\IeC {\CYRM }\IeC {\cyro }\IeC {\cyrd }\IeC {\cyre }\IeC {\cyrl }\IeC {\cyrsftsn } \IeC {\CYRL }\IeC {\cyre }\IeC {\cyro }\IeC {\cyrn }\IeC {\cyrt }\IeC {\cyrsftsn }\IeC {\cyre }\IeC {\cyrv }\IeC {\cyra }}{26}{0}{6}
+\beamer@sectionintoc {7}{\IeC {\CYRP }\IeC {\cyro }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyre } \IeC {\cyrr }\IeC {\cyre }\IeC {\cyrz }\IeC {\cyru }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyrery }}{28}{0}{7}
