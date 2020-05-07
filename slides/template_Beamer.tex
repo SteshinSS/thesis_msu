@@ -16,7 +16,6 @@
 \author{Стешин Семен Сергеевич}
 \institute{МГУ ВМК, кафедра математической кибернетики, 2020}
 \date{}
-\logo{\includegraphics[height=2cm]{logo.png}}
 \begin{document}
 \begin{frame}[plain]
     \maketitle
@@ -64,6 +63,8 @@
 	\end{itemize}
 \end{frame}
 
+
+
 \begin{frame}{Программы для \ce{^{13}C}-MFA расчетов}
 	\begin{itemize}
 		\item \textbf{13CFLUX2}  \includegraphics[height=\fontcharht\font`\B]{c.png}
@@ -91,7 +92,7 @@
 \section{Постановка задачи}
 \begin{frame}{Постановка задачи}
 	\begin{itemize}
-		\item Написать программу для расчета \ce{^{13}C}-MFA на языке \CC{}
+		\item Написать эффективную программу для расчета \ce{^{13}C}-MFA на языке \CC{}
 		\item Провести тестирование, сравнить скорость работы с существующими аналогами
 	\end{itemize}
 \end{frame}
@@ -120,6 +121,17 @@ Khnum, шестнадцать потоков --- 4 секунды
 \end{frame}
 
 \section{М-матрицы}
+\begin{frame}{Матрицы метода}
+\begin{columns}
+	\begin{column}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{matrix.jpg}
+	\end{column}
+	\begin{column}{0.5\textwidth}
+		\includegraphics[width=0.8\textwidth]{sparse_matrix.jpg}
+	\end{column}
+\end{columns}
+\end{frame}
+
 \begin{frame}{М-матрицы}
 \begin{block}{Определение М-матрицы (Ostrowsky, 1937)}
 	Квадратная матрица $\mathbf{A} \in \mathbb{R}^{n \times n}$ называется \emph{М-матрицей}, если:
