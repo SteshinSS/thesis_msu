@@ -1,8 +1,9 @@
 \babel@toc {russian}{}
-\beamer@sectionintoc {1}{\IeC {\CYRA }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrz } \IeC {\CYRM }\IeC {\cyre }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrb }\IeC {\cyro }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrch }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrk }\IeC {\cyri }\IeC {\cyrh } \IeC {\CYRP }\IeC {\cyro }\IeC {\cyrt }\IeC {\cyro }\IeC {\cyrk }\IeC {\cyro }\IeC {\cyrv }}{2}{0}{1}
+\beamer@sectionintoc {1}{\IeC {\CYRV }\IeC {\cyrv }\IeC {\cyre }\IeC {\cyrd }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{2}{0}{1}
 \beamer@sectionintoc {2}{\IeC {\CYRP }\IeC {\cyro }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrv }\IeC {\cyrk }\IeC {\cyra } \IeC {\cyrz }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrch }\IeC {\cyri }}{17}{0}{2}
 \beamer@sectionintoc {3}{Khnum}{18}{0}{3}
 \beamer@sectionintoc {4}{\IeC {\CYRM }-\IeC {\cyrm }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrc }\IeC {\cyrery }}{20}{0}{4}
 \beamer@sectionintoc {5}{ILU-\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrl }\IeC {\cyro }\IeC {\cyrzh }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{25}{0}{5}
 \beamer@sectionintoc {6}{\IeC {\CYRM }\IeC {\cyro }\IeC {\cyrd }\IeC {\cyre }\IeC {\cyrl }\IeC {\cyrsftsn } \IeC {\CYRL }\IeC {\cyre }\IeC {\cyro }\IeC {\cyrn }\IeC {\cyrt }\IeC {\cyrsftsn }\IeC {\cyre }\IeC {\cyrv }\IeC {\cyra }}{27}{0}{6}
-\beamer@sectionintoc {7}{\IeC {\CYRP }\IeC {\cyro }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyre } \IeC {\cyrr }\IeC {\cyre }\IeC {\cyrz }\IeC {\cyru }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyrery }}{29}{0}{7}
+\beamer@sectionintoc {7}{\IeC {\CYRS }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrya } \IeC {\cyro }\IeC {\cyrb }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrya }}{36}{0}{7}
+\beamer@sectionintoc {8}{\IeC {\CYRP }\IeC {\cyro }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyre } \IeC {\cyrr }\IeC {\cyre }\IeC {\cyrz }\IeC {\cyru }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyrery }}{43}{0}{8}
