@@ -230,68 +230,6 @@ Khnum, шестнадцать потоков --- 4 секунды
 \end{block}
 \end{frame}
 
-\begin{frame}{Temporal Leontief Inverse}
-M. Sonis, G. Hewings, 1998
-
-$\mathbf{A}_0 \mathbf{x} = \mathbf{y}$ \pause \\
-$\mathbf{x} = \mathbf{A}_0^{-1} \mathbf{y}$ \pause \\
-$\mathbf{A}_0^{-1} = \mathbf{R}$ \pause \\
-$\mathbf{A}_1 = \mathbf{A}_0 + \mathbf{E}$ \pause \\
-$\mathbf{A}_1^{-1} = \mathbf{R}(\mathbf{E})$ \pause \\
-$\mathbf{R}(\mathbf{E}) - ?$
-\end{frame}
-
-\section{Символьная обратная}
-\begin{frame}{Обратная для симметричной диагонально доминантной М-матрицы}
-$$\mathbf{A}\mathbf{x} = \mathbf{y}$$ \pause
-$$\mathbf{A}^{\mathsf{T}}\mathbf{A}\mathbf{x} = \mathbf{A}^{\mathsf{T}}\mathbf{y}$$ \pause
-$$\mathbf{x} = (\mathbf{A}^{\mathsf{T}}\mathbf{A})^{-1}\mathbf{A}^{\mathsf{T}}\mathbf{y}$$
-\end{frame}
-
-\begin{frame}{Обратная для симметричной диагонально доминантной М-матрицы}
-\begin{block}{Теорема (C. Dellacherie, S. Martinez, J.S. Matrin, 2014)}
-		$$\mathbf{A} = \begin{bmatrix}
-	x + a + b & -a & -b\\
-	-a & y + a + c & -c\\
-	-b & -c & z + b +c\\
-	\end{bmatrix}$$
-	$$\mathbf{A}^{-1} = \frac{1}{\operatorname{det}} \begin{bmatrix}
-	C_{11} & C_{12} & C_{13}\\
-	C_{21} & C_{22} & C_{23}\\
-	C_{31} & C_{32} & C_{33}\\
-	\end{bmatrix}^{\mathsf{T}}$$
-	$$\operatorname{det} = (x + a + b)(y + a + c)(z + b + c)$$
-\end{block}
-\end{frame}
-
-\begin{frame}{Обратная для симметричной диагонально доминантной М-матрицы}
-\begin{block}{Теорема (C. Dellacherie, S. Martinez, J.S. Matrin, 2014)}
-		$$C_{11} = (y + a + c)(z + b + c) = yz + by + cy + az + ab + ac + cz + bc$$
-		$$C_{22} = (x + a + b)(z + b + c) = xz + bx + cx + az + ab + ac + bz + bc$$
-		$$C_{33} = (x + a + b)(y + a + c) = xy + ax + cx + ay + ac + by + ab + bc$$ \pause
-		$$C_{13} = C_{31} = C_{11} \cap C_{33} = by + ab + ac + bc$$
-		$$C_{12} = C_{21} = C_{11} \cap C_{22} = az + ab + ac + bc$$
-		$$C_{23} = C_{32} = C_{22} \cap C_{33} = cx + ab + ac + bc$$
-\end{block}
-\end{frame}
-
-\begin{frame}{Обратная для симметричной диагонально доминантной М-матрицы}
-\begin{block}{Теорема (C. Dellacherie, S. Martinez, J.S. Matrin, 2014)}
-	$$\mathbf{A} = \begin{bmatrix}
-	x + a + b & -a & -b\\
-	-a & y + a + c & -c\\
-	-b & -c & z + b +c\\
-	\end{bmatrix}$$
-	$$\mathbf{A}^{-1} = \frac{1}{\operatorname{det}} \begin{bmatrix}
-	(y + a + c)(z + b + c) & az + t & by + t\\
-	az + t & (x + a + b)(z + b + c) & cx + t\\
-	by + t & cx + t & (x + a + b)(y + a + c)\\
-	\end{bmatrix}^{\mathsf{T}}$$
-	$$\operatorname{det} = (x + a + b)(y + a + c)(z + b + c)$$
-	$$t = ab + ac + bc$$
-\end{block}
-\end{frame}
-
 \section{Полученные результаты}
 \begin{frame}{Полученные результаты}
 	\begin{itemize}
